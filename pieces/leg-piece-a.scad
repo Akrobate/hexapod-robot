@@ -1,5 +1,7 @@
 use <../envelopes/servo-arm-envelope.scad>
 
+legPieceA();
+
 module legPieceA() {
 
     length = 50;

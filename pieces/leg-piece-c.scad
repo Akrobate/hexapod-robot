@@ -1,5 +1,7 @@
 use <../envelopes/servo-envelope.scad>
 
+legPieceC();
+
 module legPieceC() {
 
     length = 55;

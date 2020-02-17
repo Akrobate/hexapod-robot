@@ -1,5 +1,7 @@
 use <../envelopes/servo-envelope.scad>
 
+legPieceB();
+
 module legPieceB(servo_axis_offset = 52) {
 
     length = 55;
