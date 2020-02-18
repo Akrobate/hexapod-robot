@@ -1,15 +1,15 @@
 use <./body.scad>
 use <./leg/leg.scad>
 
-$fn = 128;
+// $fn = 128;
 
-module skeletonAssembly() {
+skeletonAssembly();
+
+module skeletonAssembly(animated_a) {
 
     bot_length = 150;
     bot_width = 50;
     bone_size = 2;
-
-    animated_a = - 45 + ($t < 0.5 ? $t * 180 : 180 - $t * 180);
     
     translate([0, 0, -bone_size])
         bodySkeleton(body_length = bot_length, body_width = bot_width, bode_size = bone_size);
