@@ -2,6 +2,7 @@ use <../pieces/leg-piece-a.scad>
 use <../pieces/leg-piece-b.scad>
 use <../pieces/leg-piece-c.scad>
 use <../pieces/leg-piece-d.scad>
+use <../pieces/leg-piece-e.scad>
 
 use <./servo-motor.scad>
 
@@ -34,6 +35,13 @@ module leg(param_s1 = 0) {
         }
     }
 
+    translate([-37, 0, 0])
+        rotate([0, 0, -angle_s1 + 180]){
+            translate([0, 0, 29.2])
+            legPieceE();
+            translate([0, 0, -9])
+            legPieceE();
+        }
 
 }
 
