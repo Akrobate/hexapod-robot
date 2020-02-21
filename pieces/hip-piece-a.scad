@@ -8,7 +8,7 @@ module hipPieceA(){
     difference() {
         union() {
             translate([-11.8 / 2, - 22.2 + (11.8 / 2) - 5, -20])
-                cube([11.8, 32.2, 36]);
+                cube([11.8, 32.2, 36], center = false);
 
             union() {
                 translate([0, 0, -22]) {
@@ -19,7 +19,11 @@ module hipPieceA(){
             }
         }
 
-        translate([0, 0, 20])
-            servoEnvelope();
+        translate([
+                0,
+                0,
+                22.7 / 2 + 16 - 15.9
+            ])
+            servoEnvelope(servo_hole_scale = 1.05);
     }
 }
