@@ -7,7 +7,7 @@ use <./servo-motor.scad>
 
 hip();
 
-module hip() {
+module hip(param_s1) {
 
     hipPieceA();
 
@@ -17,6 +17,6 @@ module hip() {
     translate([- 11.8/2 -3, 0, 0])
         hipPieceC();
     translate([0, 0, 36 - 15.9])
-        servoMotor(90);
+        servoMotor(param_s1);
 
 }
