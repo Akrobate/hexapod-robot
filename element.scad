@@ -12,6 +12,10 @@ angle = $t < 0.5 ? $t * 360 : 360 - $t * 360;
 leg_angle = 45 + ($t < 0.5 ? $t * 180 : 180 - $t * 180);
 
 
+use <pieces/subpieces/articulation-axis.scad>
+articulationAxisSubPiece();
+
+translate([50,50,0])
 rotate([0, 0, leg_angle]) {
     translate([10, -10, 25])
         rotate([0, -90, 0])
