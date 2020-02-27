@@ -4,9 +4,9 @@ module articulationAxisSubPiece(
     base_diameter,
     base_height,
     axis_diameter,
-    axis_height
+    axis_height,
+    _fn = 64
 ) {
-    _fn = 32;
     // servo body r = 11.8 / 2
     // servo axis r = 4.6 / 2
 
