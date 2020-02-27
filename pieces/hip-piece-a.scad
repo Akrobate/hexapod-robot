@@ -1,5 +1,5 @@
 use <../envelopes/servo-envelope.scad>
-
+use <./subpieces/articulation-axis.scad>
 hipPieceA();
 
 
@@ -35,33 +35,14 @@ module hipPieceA(){
                     ], center = false);
 
             union() {
-                translate(
-                    [
-                        0,
-                        0,
-                        - articulation_support_height // -22
-                    ]
-                ) {
-                    color(debug_colors ? articulation_support_color : "")
-                    cylinder(
-                        r = 11.8 / 2,
-                        h = articulation_support_height,
-                        $fn = _fn
+                mirror([0, 0, 1])
+                    articulationAxisSubPiece(
+                        base_diameter = 11.8,
+                        base_height = articulation_support_height,
+                        axis_diameter = 4.6,
+                        axis_height = articulation_height,
+                        _fn = _fn
                     );
-                    translate(
-                        [
-                            0,
-                            0,
-                            - articulation_height
-                        ]
-                    )
-                        color(debug_colors ? articulation_color : "")
-                        cylinder(
-                            r = 4.6 / 2,
-                            h = articulation_height,
-                            $fn = _fn
-                        );
-                }
             }
         }
 
