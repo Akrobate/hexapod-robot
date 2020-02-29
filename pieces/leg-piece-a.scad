@@ -5,7 +5,7 @@ legPieceA();
 module legPieceA() {
 
     length = 50;
-    width = 10;
+    width = 6;
     thickness = 3;
 
     hole_diameter = 3;
