@@ -4,7 +4,7 @@ use <./subpieces/articulation-axis.scad>
 hipPieceC();
 
 
-module hipPieceC(x_offset_top_axis = -10){
+module hipPieceC(x_offset_top_axis = -15){
 
 
     main_piece_height = 36;
@@ -20,7 +20,7 @@ module hipPieceC(x_offset_top_axis = -10){
                 [
                     0,
                     32.2 - 5 - (11.8 / 2) + x_offset_top_axis,
-                    25
+                    30
                 ])
                 rotate([0, -90, 0])
                     articulationAxisSubPiece(
