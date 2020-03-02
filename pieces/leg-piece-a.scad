@@ -1,4 +1,5 @@
 use <../envelopes/servo-arm-envelope.scad>
+use <../assets/fonts/Freshman.ttf>
 
 legPieceA();
 
