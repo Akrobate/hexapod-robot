@@ -24,8 +24,7 @@ module hipPieceA(){
                     - 11.8 / 2,
                     - 22.2 + (11.8 / 2) - 5,
                     - 0
-                ]
-            )
+                ])
                 color(debug_colors ? main_piece_color : "")
                 cube(
                     [
