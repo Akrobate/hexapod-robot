@@ -34,7 +34,7 @@ module leg(param_s1 = 0) {
         rotate([0, 0, -angle_s1 + 180]){
             translate([0, 0, 21])
             legPieceE();
-            translate([0, 0, -5])
+            translate([0, 0, -1.80])
             legPieceE();
         }
 

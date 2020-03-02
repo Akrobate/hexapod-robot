@@ -14,7 +14,7 @@ leg_angle = 90;
 
 translate([0,0,0])
 rotate([0, 0, leg_angle]) {
-    translate([10, -15, 30]) // 10
+    translate([11.1, -15, 30]) // 10
         rotate([0, -90, 0])
             leg(param_s1 = leg_angle);
 
