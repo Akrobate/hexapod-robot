@@ -3,10 +3,15 @@ use <../assets/fonts/Freshman.ttf>
 
 legPieceA();
 
-module legPieceA() {
 
-    length = 50;
-    width = 6;
+/**
+ *  Hold servo arm to the leg
+ */
+module legPieceA(
+    length = 50,
+    width = 6,
+    name = "A"
+) {
     thickness = 3;
 
     hole_diameter = 3;
