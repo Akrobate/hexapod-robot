@@ -3,7 +3,7 @@ use <./subpieces/articulation-axis.scad>
 hipPieceA();
 
 
-module hipPieceA(){
+module hipPieceA() {
 
     _fn = 32;
     debug_colors = false;

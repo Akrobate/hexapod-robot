@@ -16,7 +16,7 @@ module legPieceC(
     _fn = 64;
     thickness = 3;
     hole_diameter = 3;
-    font_deep = thickness / 3;
+    font_deep = 0.5;
 
     difference() {        
         hull() {
