@@ -8,12 +8,13 @@ module legPieceB(
     fixation_axis_offset = 29
     ) {
 
-    _fn = 128;
+    _fn = 64;
     width = 10;
-    thickness = 3;
+    thickness = 6;
 
     support_diameter = 12;
-
+    support_thickness = 12;
+    
     hole_diameter = 3;
 
     translate([0, -servo_axis_offset, 0]) {
@@ -30,7 +31,7 @@ module legPieceB(
                     servoEnvelope();
         }
 
-        support_thickness = 10;
+        
         translate([0, 0, thickness])
             difference() {
                 hull() {
