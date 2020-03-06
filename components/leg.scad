@@ -23,7 +23,7 @@ module leg(param_s1 = 0) {
                 rotate([0, 0, 180])
                     servoMotor(angle_s1 - 90);
 
-                translate([0, 0, 15.9 - 3]) {
+                translate([0, 0, 15.9 - 6]) {
                     legPieceB();
                 }
                 
@@ -38,9 +38,9 @@ module leg(param_s1 = 0) {
             translate([0, 0, -1.80])
                 legPieceC(length = hip_knee_distance, width = 6, name = "C2");
 
-            translate([0, 16, 1])
+            translate([0, 16, 1.2])
                 legPieceD(
-                    length = 20,
+                    length = 11.8 + 3 + 3 + 1 + 1,
                     height = 6,
                     width = 5
                 );
