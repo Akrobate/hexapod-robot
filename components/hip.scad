@@ -9,11 +9,11 @@ hip();
 
 module hip(param_s1) {
 
+color("#33FF33")
     hipPieceA();
 
     translate([11.8/2, 0, 0])
         hipPieceB();
-
     translate([- 11.8/2 -3, 0, 0])
         hipPieceC();
     translate([0, 0, 36 - 15.9])

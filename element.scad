@@ -28,13 +28,38 @@ translate([0,0,0])
             hip(param_s1 = leg_angle);
 
 
-        if (display_screws)
+        if (display_screws) {
             translate([
-                    -(11.8 / 2) - 3 - 7,
-                    -15,
-                    30
-                ])
-                rotate([0, 90, 0])
-                    screw();
+                -(11.8 / 2) - 3 - 7,
+                -15,
+                30
+            ])
+               // Screw servo arm articulation
+                    rotate([0, 90, 0])
+                        screw();
+            
+            translate([
+                -(11.8 / 2) - 6,
+                0,
+                0
+            ]) {
+                translate([0, 6, 15])
+                    rotate([0, 90, 0])
+                        screw();
+
+                translate([0, -3, 15])
+                    rotate([0, 90, 0])
+                        screw();
+
+                translate([0, 6, 5])
+                    rotate([0, 90, 0])
+                        screw();
+
+                translate([0, -3, 5])
+                    rotate([0, 90, 0])
+                        screw();
+
+            }
+        }
 
     }
