@@ -9,41 +9,22 @@ module hipPieceA() {
     debug_colors = false;
     
     main_piece_color = "#FF0000";
-    main_piece_height = 36;
-    
-    articulation_support_color = "#00FF00";
-    articulation_support_height = 1;
-
-    articulation_color = "#0000FF";
-    articulation_height = 3;
+    main_piece_height = 26;
 
     difference() {
-        union() {
-            translate(
+        translate(
+            [
+                - 11.8 / 2,
+                - 22.2 + (11.8 / 2) - 5,
+                - 0
+            ])
+            color(debug_colors ? main_piece_color : "")
+            cube(
                 [
-                    - 11.8 / 2,
-                    - 22.2 + (11.8 / 2) - 5,
-                    - 0
-                ])
-                color(debug_colors ? main_piece_color : "")
-                cube(
-                    [
-                        11.8,
-                        32.2,
-                        main_piece_height
-                    ], center = false);
-
-            union() {
-                mirror([0, 0, 1])
-                    articulationAxisSubPiece(
-                        base_diameter = 11.8,
-                        base_height = articulation_support_height,
-                        axis_diameter = 4.6,
-                        axis_height = articulation_height,
-                        _fn = _fn
-                    );
-            }
-        }
+                    11.8,
+                    32.2,
+                    main_piece_height
+                ], center = false);
 
         translate([
                 0,
