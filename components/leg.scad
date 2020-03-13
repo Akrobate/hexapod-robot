@@ -5,6 +5,12 @@ use <../pieces/leg-piece-d.scad>
 
 use <./servo-motor.scad>
 
+/**
+ * Leg
+ * @description Leg assembly
+ * @category HipLeg
+ * @tag component
+ */
 module leg(param_s1 = 0) {
 
     angle_s1_start = -90;

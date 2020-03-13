@@ -3,7 +3,12 @@ use <./subpieces/articulation-axis.scad>
 
 hipPieceD();
 
-
+/**
+ * HipPieceD
+ * @description Hip Piece D
+ * @category hip
+ * @tag piece
+ */
 module hipPieceD() {
 
     _fn = 32;

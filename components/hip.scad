@@ -7,6 +7,12 @@ use <../assets/screw/screw.scad>
 
 hip();
 
+/**
+ * Hip
+ * @description Hip assembly
+ * @category HipLeg
+ * @tag component
+ */
 module hip(param_s1) {
 
     

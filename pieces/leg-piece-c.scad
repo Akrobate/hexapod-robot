@@ -4,9 +4,15 @@ use <../assets/fonts/Freshman.ttf>
 legPieceC();
 
 /**
+ * LegPieceC
+ * @description Leg Piece C
+ * @category leg
+ * @tag piece
+ *
  * @param {Number} length - the length beetween the two asis holes
  * @param {Number} width - the width of the piece
  * @param {String} name - the name of the piece
+ *
  */
 module legPieceC(
     length = 50,

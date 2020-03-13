@@ -6,6 +6,13 @@ use <envelopes/servo-envelope.scad>
 use <components/servo-motor.scad>
 use <assets/screw/screw.scad>
 
+/**
+ * HipLeg
+ * @description HipLeg
+ * @category root
+ * @tag component
+ */
+
 // leg tests
 angle = $t < 0.5 ? $t * 360 : 360 - $t * 360;
 // angle = 90;

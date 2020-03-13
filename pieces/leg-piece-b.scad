@@ -2,6 +2,12 @@ use <../envelopes/servo-envelope.scad>
 
 legPieceB();
 
+/**
+ * LegPieceB
+ * @description Leg Piece B
+ * @category leg
+ * @tag piece
+ */
 module legPieceB(
     length = 70,
     servo_axis_offset = 52,

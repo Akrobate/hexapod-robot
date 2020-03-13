@@ -3,6 +3,12 @@ use <./subpieces/articulation-axis.scad>
 
 legPieceD();
 
+/**
+ * LegPieceD
+ * @description Leg Piece D
+ * @category leg
+ * @tag piece
+ */
 module legPieceD(
     length = 30,
     height = 6,

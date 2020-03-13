@@ -3,9 +3,11 @@ use <../assets/fonts/Freshman.ttf>
 
 legPieceA();
 
-
 /**
- *  Hold servo arm to the leg
+ * LegPieceA
+ * @description Hold servo arm to the leg
+ * @category leg
+ * @tag piece
  */
 module legPieceA(
     length = 50,

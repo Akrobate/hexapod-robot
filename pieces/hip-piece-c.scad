@@ -3,7 +3,12 @@ use <./subpieces/articulation-axis.scad>
 
 hipPieceC();
 
-
+/**
+ * HipPieceC
+ * @description Hip Piece C
+ * @category hip
+ * @tag piece
+ */
 module hipPieceC(
     x_offset_top_axis = -15,
     x_offset_bottom_axis = -15

@@ -2,7 +2,12 @@ use <../envelopes/servo-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 hipPieceA();
 
-
+/**
+ * HipPieceA
+ * @description Hip Piece A
+ * @category hip
+ * @tag piece
+ */
 module hipPieceA() {
 
     _fn = 32;
