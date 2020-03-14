@@ -8,10 +8,12 @@ use <../assets/screw/screw.scad>
 hip();
 
 /**
- * Hip
+ * HipComponent
+ * @name HipComponent
  * @description Hip assembly
  * @category HipLeg
- * @tag component
+ * @type component
+ * @parent HipLeg
  */
 module hip(param_s1) {
 
@@ -77,7 +79,5 @@ module hip(param_s1) {
             rotate([0, -90, 0])
                 screw();
     }
-
-
 
 }

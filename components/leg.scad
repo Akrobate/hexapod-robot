@@ -6,10 +6,13 @@ use <../pieces/leg-piece-d.scad>
 use <./servo-motor.scad>
 
 /**
- * Leg
+ * LegComponent
+ * @name LegComponent
  * @description Leg assembly
  * @category HipLeg
  * @tag component
+ * @type component
+ * @parent HipLeg
  */
 module leg(param_s1 = 0) {
 

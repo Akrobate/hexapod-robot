@@ -8,9 +8,11 @@ use <assets/screw/screw.scad>
 
 /**
  * HipLeg
+ * @name HipLed
  * @description HipLeg
  * @category root
  * @tag component
+ * @type component
  */
 
 // leg tests
