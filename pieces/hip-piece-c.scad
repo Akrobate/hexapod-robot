@@ -5,9 +5,12 @@ hipPieceC();
 
 /**
  * HipPieceC
+ * @name HipPieceC
  * @description Hip Piece C
  * @category hip
  * @tag piece
+ * @type piece
+ * @parent HipComponent
  */
 module hipPieceC(
     x_offset_top_axis = -15,

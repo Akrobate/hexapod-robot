@@ -5,9 +5,12 @@ hipPieceD();
 
 /**
  * HipPieceD
+ * @name HipPieceD
  * @description Hip Piece D
  * @category hip
  * @tag piece
+ * @type piece
+ * @parent HipComponent
  */
 module hipPieceD() {
 
