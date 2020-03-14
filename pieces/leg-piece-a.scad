@@ -5,9 +5,12 @@ legPieceA();
 
 /**
  * LegPieceA
+ * @name LegPieceA
  * @description Hold servo arm to the leg
  * @category leg
  * @tag piece
+ * @type piece
+ * @parent LegComponent
  */
 module legPieceA(
     length = 50,
@@ -32,6 +35,5 @@ module legPieceA(
 
         translate([0, length, 0])
             cylinder(h = thickness * 5, r = hole_diameter, center = true, $fn = 64);
-
     }
 }

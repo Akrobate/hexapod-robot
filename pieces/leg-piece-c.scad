@@ -5,9 +5,12 @@ legPieceC();
 
 /**
  * LegPieceC
+ * @name LegPieceC
  * @description Leg Piece C
  * @category leg
- * @tag piece
+ * @type piece
+ * @type piece
+ * @parent LegComponent
  *
  * @param {Number} length - the length beetween the two asis holes
  * @param {Number} width - the width of the piece

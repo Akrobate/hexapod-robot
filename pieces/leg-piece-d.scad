@@ -5,9 +5,12 @@ legPieceD();
 
 /**
  * LegPieceD
+ * @name LegPieceD
  * @description Leg Piece D
  * @category leg
  * @tag piece
+ * @type piece
+ * @parent LegComponent
  */
 module legPieceD(
     length = 30,
