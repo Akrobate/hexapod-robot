@@ -21,7 +21,7 @@ module legPieceA(
 
     hole_diameter = 3;
 
-    difference() {        
+    difference() {
         hull() {
             cylinder(h = thickness, r = width, center = false, $fn = 64);
             translate([0, length, 0])
