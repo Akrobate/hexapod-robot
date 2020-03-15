@@ -3,6 +3,13 @@ use <../../envelopes/screw-envelope.scad>
 
 articulationAxisScrewSubPiece();
 
+/**
+ * articulationAxisScrewSubPiece
+ * @name articulationAxisScrewSubPiece
+ * @description articlulation axix with screw throw
+ * @tag subPiece
+ * @type subPiece
+ */
 module articulationAxisScrewSubPiece(
     base_diameter = 10,
     base_height = 1,
