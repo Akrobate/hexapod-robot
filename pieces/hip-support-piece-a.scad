@@ -22,7 +22,7 @@ module hipSupportPieceA(
         hull() {
             cylinder(h = thickness, r = width, center = false, $fn = 64);
             
-            translate([0, length - 1, 0])
+            translate([0, length - 1, thickness / 2])
                 cube([width * 2, 2, thickness], center = true);
         }
 
