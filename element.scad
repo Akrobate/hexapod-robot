@@ -2,8 +2,7 @@
 
 use <components/leg.scad>
 use <components/hip.scad>
-use <envelopes/servo-envelope.scad>
-use <components/servo-motor.scad>
+use <components/hip-support.scad>
 use <assets/screw/screw.scad>
 
 /**
@@ -27,14 +26,21 @@ leg_angle = 90;
 
 display_screws = true;
 
+
+
 translate([0,0,0])
+
+    rotate([0, 0, 90])
+        translate([0, 0, -3 -1])
+            hipSupport();
+
     rotate([0, 0, leg_angle]) {
         translate([11.1, -15, 30]) // 10
             rotate([0, -90, 0])
                 leg(param_s1 = leg_angle);
 
         translate([0,0,0])
-            hip(param_s1 = leg_angle);
+            hip(param_s1 = leg_angle + 90);
 
 
         if (display_screws) {
@@ -44,8 +50,8 @@ translate([0,0,0])
                 30
             ])
                // Screw servo arm articulation
-                    rotate([0, 90, 0])
-                        screw();
+                rotate([0, 90, 0])
+                    screw();
         }
 
     }
