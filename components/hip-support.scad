@@ -1,5 +1,6 @@
 use <../pieces/hip-support-piece-a.scad>
 use <../pieces/hip-support-piece-b.scad>
+use <../pieces/hip-support-piece-c.scad>
 use <../assets/screw/screw.scad>
 
 hipSupport();
@@ -14,10 +15,18 @@ hipSupport();
  */
 module hipSupport(param_s1) {
     
-    translate([0, 0, 10])
-            hipSupportPieceA();
+    height = 50.3;
+    a_b_thickness = 3;
 
-    translate([0, 0, -10])
-            hipSupportPieceB();
+    translate([0, 0, height + a_b_thickness])
+        hipSupportPieceA();
+
+    translate([0, 0, 0])
+        hipSupportPieceB();
+
+    translate([0, 25 - (6 / 2), a_b_thickness])
+        hipSupportPieceC(
+            height = height
+        );
 
 }
