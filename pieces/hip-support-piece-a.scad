@@ -12,7 +12,7 @@ hipSupportPieceA();
  */
 module hipSupportPieceA(
     length = 25,
-    width = 6
+    width = 12
 ) {
     thickness = 3;
 
@@ -20,10 +20,10 @@ module hipSupportPieceA(
 
     difference() {
         hull() {
-            cylinder(h = thickness, r = width, center = false, $fn = 64);
+            cylinder(h = thickness, r = width / 2, center = false, $fn = 64);
             
             translate([0, length - 1, thickness / 2])
-                cube([width * 2, 2, thickness], center = true);
+                cube([width, 2, thickness], center = true);
         }
 
         translate([0, 0, 1.4])
