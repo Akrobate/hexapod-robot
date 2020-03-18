@@ -34,10 +34,10 @@ module legPieceC(
                 cylinder(h = thickness, r = width, center = false, $fn = _fn);
         }
 
-        translate([width / 2, length / 2, thickness - font_deep + 0.01])
-            rotate([0,0,90])
-                linear_extrude(font_deep)
-                    text(name, font = "Freshman", size = width, halign = "center", $fn = _fn);
+        // translate([width / 2, length / 2, thickness - font_deep + 0.01])
+        //     rotate([0,0,90])
+        //         linear_extrude(font_deep)
+        //             text(name, font = "Freshman", size = width, halign = "center", $fn = _fn);
 
         translate([0, 0, 0])
             cylinder(h = thickness * 5, r = hole_diameter, center = true, $fn = _fn);
