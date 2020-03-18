@@ -10,7 +10,7 @@ hipSupportPieceC();
  */
 module hipSupportPieceC(
     length = 6,
-    width = 12,
+    width = 11.8 + 6,
     height = 50
 ) {
     translate([0, 0, height / 2])

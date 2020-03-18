@@ -12,7 +12,7 @@ hipSupportPieceA();
  */
 module hipSupportPieceA(
     length = 25,
-    width = 12
+    width = 11.8 + 6
 ) {
     thickness = 3;
 
