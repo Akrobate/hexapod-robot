@@ -16,8 +16,10 @@ module hipPieceC(
     x_offset_top_axis = -15,
     x_offset_bottom_axis = -15
 ) {
+
     main_piece_height = 36;
-    
+    articluation_axis_diameter_offest = 0.2;
+
     translate(
         [
             0,
@@ -36,7 +38,7 @@ module hipPieceC(
                     articulationAxisSubPiece(
                         base_diameter = 10,
                         base_height = 1,
-                        axis_diameter = 5,
+                        axis_diameter = 6 - articluation_axis_diameter_offest,
                         axis_height = 3
                     );
 
@@ -50,7 +52,7 @@ module hipPieceC(
                     articulationAxisSubPiece(
                         base_diameter = 10,
                         base_height = 1,
-                        axis_diameter = 5,
+                        axis_diameter = 6 - articluation_axis_diameter_offest,
                         axis_height = 3
                     );
         }

@@ -26,6 +26,8 @@ module hipPieceD() {
     articulation_color = "#0000FF";
     articulation_height = 3;
 
+    articluation_axis_diameter_offest = 0.2;
+
     difference() {
         union() {
             translate(
@@ -47,7 +49,7 @@ module hipPieceD() {
                     articulationAxisSubPiece(
                         base_diameter = 11.8,
                         base_height = articulation_support_height,
-                        axis_diameter = 4.6,
+                        axis_diameter = 6 - articluation_axis_diameter_offest,
                         axis_height = articulation_height,
                         _fn = _fn
                     );

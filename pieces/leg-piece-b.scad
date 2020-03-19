@@ -25,6 +25,8 @@ module legPieceB(
     support_diameter = 12;
     support_thickness = 12.29;
     
+    articluation_axis_diameter_offest = 0.2;
+
     hole_diameter = 3;
 
     translate([0, -servo_axis_offset, 0]) {
@@ -50,9 +52,9 @@ module legPieceB(
                         translate([0, 0, support_thickness])
                             rotate([0, 0, 0])
                                 articulationAxisSubPiece(
-                                    base_diameter = 10, //10
+                                    base_diameter = 10,
                                     base_height = 1,
-                                    axis_diameter = 5,
+                                    axis_diameter = 6 - articluation_axis_diameter_offest,
                                     axis_height = 3
                                 );
                     }
