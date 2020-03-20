@@ -1,5 +1,4 @@
-use <../envelopes/servo-envelope.scad>
-use <./subpieces/articulation-axis.scad>
+use <../envelopes/screw-envelope.scad>
 
 legPieceD();
 
@@ -19,10 +18,16 @@ module legPieceD(
     _fn = 64
 ) {
 
-    hull() {
-        cylinder(h = length, r = height, center = false, $fn = _fn);
-        translate([0, width, 0])
-        cylinder(h = length, r = height, center = false, $fn = _fn);
-    }
+    difference() {
 
+        hull() {
+            cylinder(h = length, r = height, center = false, $fn = _fn);
+            translate([0, width, 0])
+            cylinder(h = length, r = height, center = false, $fn = _fn);
+        }
+
+        // translate([0, 0, 0])
+        //     rotate([0, 0, 0])
+        //         screwEnvelope();
+    }
 }
