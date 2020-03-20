@@ -24,8 +24,13 @@ module legPieceC(
 ) {
     _fn = 64;
     thickness = 3;
-    hole_diameter = 3;
+    hole_diameter = 6;
     font_deep = 0.5;
+
+    // Fixations holes configuration
+    fixation_hole_diameter = 3.4;
+    fixation1_x_offset = 15;
+    fixation2_x_offset = 22;
 
     difference() {        
         hull() {
@@ -34,16 +39,18 @@ module legPieceC(
                 cylinder(h = thickness, r = width, center = false, $fn = _fn);
         }
 
-        // translate([width / 2, length / 2, thickness - font_deep + 0.01])
-        //     rotate([0,0,90])
-        //         linear_extrude(font_deep)
-        //             text(name, font = "Freshman", size = width, halign = "center", $fn = _fn);
-
         translate([0, 0, 0])
-            cylinder(h = thickness * 5, r = hole_diameter, center = true, $fn = _fn);
+            cylinder(h = thickness * 5, r = hole_diameter / 2, center = true, $fn = _fn);
 
         translate([0, length, 0])
-            cylinder(h = thickness * 5, r = hole_diameter, center = true, $fn = _fn);
+            cylinder(h = thickness * 5, r = hole_diameter / 2, center = true, $fn = _fn);
+
+        // Fixation holes
+        translate([0, fixation1_x_offset, 0])
+            cylinder(h = thickness * 5, r = fixation_hole_diameter / 2, center = true, $fn = _fn);
+
+        translate([0, fixation2_x_offset, 0])
+            cylinder(h = thickness * 5, r = fixation_hole_diameter / 2, center = true, $fn = _fn);
 
     }
 }
