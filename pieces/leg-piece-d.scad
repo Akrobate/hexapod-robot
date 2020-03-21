@@ -13,8 +13,8 @@ legPieceD();
  */
 module legPieceD(
     length = 30,
-    height = 12,
-    width = 20,
+    height = 8,
+    width = 8,
     _fn = 64
 ) {
 
