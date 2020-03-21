@@ -13,21 +13,38 @@ legPieceD();
  */
 module legPieceD(
     length = 30,
-    height = 6,
+    height = 12,
     width = 20,
     _fn = 64
 ) {
 
+    screw_enveloppe_head_height = 3;
+    holes_deep_offset = 2;
+
     difference() {
 
         hull() {
-            cylinder(h = length, r = height, center = false, $fn = _fn);
+            cylinder(h = length, r = height / 2, center = false, $fn = _fn);
             translate([0, width, 0])
-            cylinder(h = length, r = height, center = false, $fn = _fn);
+            cylinder(h = length, r = height / 2, center = false, $fn = _fn);
         }
 
-        // translate([0, 0, 0])
-        //     rotate([0, 0, 0])
-        //         screwEnvelope();
+        // Bottom screws
+        translate([0, 0, - screw_enveloppe_head_height - holes_deep_offset])
+            rotate([0, 0, 0])
+                screwEnvelope();
+        
+        translate([0, width, - screw_enveloppe_head_height - holes_deep_offset])
+            rotate([0, 0, 0])
+                screwEnvelope();
+
+        // Top screws
+        translate([0, 0, length + screw_enveloppe_head_height + holes_deep_offset])
+            rotate([0, 180, 0])
+                screwEnvelope();
+        
+        translate([0, width, length + screw_enveloppe_head_height + holes_deep_offset])
+            rotate([0, 180, 0])
+                screwEnvelope();
     }
 }
