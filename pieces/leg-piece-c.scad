@@ -29,7 +29,7 @@ module legPieceC(
 
     // Fixations holes configuration
     fixation_hole_diameter = 3.4;
-    fixation1_x_offset = 15;
+    fixation1_x_offset = 14;
     fixation2_x_offset = 22;
 
     difference() {        

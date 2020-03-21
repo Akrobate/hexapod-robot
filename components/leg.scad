@@ -47,11 +47,12 @@ module leg(param_s1 = 0) {
             translate([0, 0, -1.80])
                 legPieceC(length = hip_knee_distance, width = 6, name = "C2");
 
-            translate([0, 16, 1.2])
+            translate([0, 14, 1.2])
+                color("orange")
                 legPieceD(
                     length = 11.8 + 3 + 3 + 1 + 1,
-                    height = 6,
-                    width = 5
+                    height = 8,
+                    width = 8
                 );
         }
 
