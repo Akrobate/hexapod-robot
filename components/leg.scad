@@ -4,6 +4,7 @@ use <../pieces/leg-piece-c.scad>
 use <../pieces/leg-piece-d.scad>
 
 use <./servo-motor.scad>
+use <../assets/screw/screw.scad>
 
 /**
  * LegComponent
@@ -54,6 +55,23 @@ module leg(param_s1 = 0) {
                     height = 8,
                     width = 8
                 );
+
+            screws_offset = 0;
+
+            translate([0, 14, -4.8 - screws_offset])
+                screw();
+
+            translate([0, 22, -4.8 - screws_offset])
+                screw();
+
+            translate([0, 14, 27 + screws_offset])
+                rotate([0, 180, 0])
+                    screw();
+
+            translate([0, 22, 27 + screws_offset])
+                rotate([0, 180, 0])
+                    screw();
+
         }
 
 }
