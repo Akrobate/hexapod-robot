@@ -52,5 +52,12 @@ module legPieceC(
         translate([0, fixation2_x_offset, 0])
             cylinder(h = thickness * 5, r = fixation_hole_diameter / 2, center = true, $fn = _fn);
 
+        // Places for screw head
+        translate([0, fixation1_x_offset, -2])
+            cylinder(h = thickness, r = 4.4, center = false, $fn = _fn);
+
+        translate([0, fixation2_x_offset, -2])
+            cylinder(h = thickness, r = 4.4, center = false, $fn = _fn);
+
     }
 }
