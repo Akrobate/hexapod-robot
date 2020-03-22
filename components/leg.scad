@@ -43,8 +43,9 @@ module leg(param_s1 = 0) {
 
     translate([-23, 0, 0])
         rotate([0, 0, -angle_s1 + 180]){
-            translate([0, 0, 21])
-                legPieceC(length = hip_knee_distance, width = 6, name = "C1");
+            translate([0, 0, 24])
+                mirror([0,0,1])
+                    legPieceC(length = hip_knee_distance, width = 6, name = "C1");
             translate([0, 0, -1.80])
                 legPieceC(length = hip_knee_distance, width = 6, name = "C2");
 
@@ -56,7 +57,7 @@ module leg(param_s1 = 0) {
                     width = 8
                 );
 
-            screws_offset = 0;
+            screws_offset = -1;
 
             translate([0, 14, -4.8 - screws_offset])
                 screw();
