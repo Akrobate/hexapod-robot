@@ -19,7 +19,7 @@ module legPieceD(
 ) {
 
     screw_enveloppe_head_height = 3;
-    holes_deep_offset = 2;
+    holes_deep_offset = 1;
 
     difference() {
 
