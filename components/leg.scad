@@ -2,6 +2,7 @@ use <../pieces/leg-piece-a.scad>
 use <../pieces/leg-piece-b.scad>
 use <../pieces/leg-piece-c.scad>
 use <../pieces/leg-piece-d.scad>
+use <../pieces/leg-piece-e.scad>
 
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
@@ -16,7 +17,6 @@ use <../assets/screw/screw.scad>
  * @parent HipLeg
  */
 module leg(param_s1 = 0) {
-
     angle_s1_start = -90;
     
     angle_s1 = param_s1 + angle_s1_start;
@@ -33,10 +33,15 @@ module leg(param_s1 = 0) {
                 rotate([0, 0, 180])
                     servoMotor(angle_s1 - 90);
 
-                translate([0, 0, 15.9 - 6]) {
+                translate([0, 0, 15.9 - 3]) {
                     legPieceB();
                 }
                 
+                translate([0, -23, 15.9 - 3]) {
+                    
+                    rotate([0, 180, 180])
+                    legPieceE();
+                }
             }
         }
     }
