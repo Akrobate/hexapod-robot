@@ -20,7 +20,7 @@ module legPieceB(
 
     _fn = 64;
     width = 10;
-    thickness = 6;
+    thickness = 3;
 
     support_diameter = 12;
     support_thickness = 12.29;
@@ -59,9 +59,6 @@ module legPieceB(
                                 );
                     }
 
-
-                    //translate([0, fixation_axis_offset, 0])
-                    //    cylinder(h = thickness * support_thickness, r = hole_diameter, center = true, $fn = _fn);
                 }
         }
     }
