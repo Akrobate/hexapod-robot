@@ -13,7 +13,7 @@ legPieceE();
  * @parent LegComponent
  */
 module legPieceE(
-    length = 35,
+    length = 29,
     servo_axis_offset = 52,
     screw_hole_offset_1 = 15,
     screw_hole_offset_2 = 25,
@@ -23,10 +23,10 @@ module legPieceE(
 
     _fn = 64;
     width = 10;
-    thickness = 3;
+    thickness = 2.5;
 
     support_diameter = 12;
-    support_thickness = 0.5;
+    support_thickness = 0.0;
     
     articluation_axis_diameter_offest = 0.2;
 
@@ -50,7 +50,7 @@ module legPieceE(
                             base_diameter = 10,
                             base_height = 1,
                             axis_diameter = 6 - articluation_axis_diameter_offest,
-                            axis_height = 3
+                            axis_height = 3 - 0.01
                         );
             }
         }
