@@ -32,7 +32,7 @@ module legPieceB(
     translate([0, -servo_axis_offset, 0]) {
 
         union() {
-            difference() {    
+            difference() {
                 hull() {
                     cylinder(h = thickness, r = width, center = false, $fn = _fn);
                     translate([0, length, 0])
@@ -43,6 +43,13 @@ module legPieceB(
                     rotate([0, 0, 180])
                         servoEnvelope();
             }
+
+            translate([0, 0, thickness])
+                hull() {
+                    cylinder(h = thickness * 2, r = width, center = false, $fn = _fn);
+                    translate([0, fixation_axis_offset, 0])
+                    cylinder(h = thickness * 2, r = width, center = false, $fn = _fn);
+                }
 
             
             translate([0, 0, thickness])
