@@ -23,6 +23,8 @@ module leg(param_s1 = 0) {
 
     hip_knee_distance = 40;
 
+    
+
     rotate([0, 0, -angle_s1]) {
         translate([0, -hip_knee_distance, 0]) {
             translate([0, 0, 21])
@@ -38,9 +40,14 @@ module leg(param_s1 = 0) {
                 }
                 
                 translate([0, -23, 15.9 - 3]) {
-                    
                     rotate([0, 180, 180])
                     legPieceE();
+
+                    translate([0, -15, -5.5])
+                        screw();
+
+                    translate([0, -25, -5.5])
+                        screw();
                 }
             }
         }
@@ -77,7 +84,6 @@ module leg(param_s1 = 0) {
             translate([0, 22, 27 + screws_offset])
                 rotate([0, 180, 0])
                     screw();
-
         }
 
 }
