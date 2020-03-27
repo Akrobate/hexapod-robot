@@ -1,5 +1,7 @@
 use <../envelopes/servo-envelope.scad>
+use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
+
 hipPieceA();
 
 /**
@@ -40,5 +42,30 @@ module hipPieceA() {
                 main_piece_height + 22.7 / 2 - 15.9
             ])
             servoEnvelope(servo_hole_scale = 1.05);
+
+        translate([0, 0, -10]) {
+        
+            // B face screws holes
+            translate([(11.8 / 2) + 3 + 2.8, 0, 0]) {
+                translate([0, 6, 15])
+                    rotate([0, -90, 0])
+                        screwEnvelope();
+
+                translate([0, -3, 15])
+                    rotate([0, -90, 0])
+                        screwEnvelope();
+            }
+
+            // C face screws holes
+            translate([ -(11.8 / 2) - 3 - 2.8, 0, 0]) {
+                translate([0, 6, 15])
+                    rotate([0, 90, 0])
+                        screwEnvelope();
+
+                translate([0, -3, 15])
+                    rotate([0, 90, 0])
+                        screwEnvelope();
+            }
+        }
     }
 }
