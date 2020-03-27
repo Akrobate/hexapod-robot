@@ -17,20 +17,32 @@ hip();
  */
 module hip(param_s1) {
 
-
+    // Display params
     display_screws = true;
-    dispaly_screws_offset = 10; // Totaly mounted should be 0
-    
+
+    display_general_offset = 0; // Totaly mounted should be 0
+    dispaly_screws_offset = 2 * display_general_offset ; // Totaly mounted should be 0
+    dispaly_HipPieceB_offset = display_general_offset; // Totaly mounted should be 0
+    dispaly_HipPieceC_offset = display_general_offset; // Totaly mounted should be 0
+
     translate([0, 0, 10])
         color("#337733")
             hipPieceA();
     
     hipPieceD();
 
-    translate([11.8/2, 0, 0])
+    translate([
+            11.8/2 + dispaly_HipPieceB_offset,
+            0,
+            0
+        ])
         hipPieceB();
 
-    translate([- 11.8/2 -3, 0, 0])
+    translate([
+            -11.8/2 - 3 - dispaly_HipPieceC_offset,
+            0,
+            0
+        ])
         hipPieceC();
  
     translate([0, 0, 36 - 15.9])
