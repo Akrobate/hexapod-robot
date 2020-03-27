@@ -25,7 +25,7 @@ module legPieceC(
     font_deep = 0.5;
 
     // Fixations holes configuration
-    fixation_hole_diameter = 3.4;
+    screw_hole_diameter = 3.5;
     fixation1_x_offset = 14;
     fixation2_x_offset = 22;
 
@@ -44,10 +44,10 @@ module legPieceC(
 
         // Fixation holes
         translate([0, fixation1_x_offset, 0])
-            cylinder(h = thickness * 5, r = fixation_hole_diameter / 2, center = true, $fn = _fn);
+            cylinder(h = thickness * 5, r = screw_hole_diameter / 2, center = true, $fn = _fn);
 
         translate([0, fixation2_x_offset, 0])
-            cylinder(h = thickness * 5, r = fixation_hole_diameter / 2, center = true, $fn = _fn);
+            cylinder(h = thickness * 5, r = screw_hole_diameter / 2, center = true, $fn = _fn);
 
         // Places for screw head
         translate([0, fixation1_x_offset, -2])

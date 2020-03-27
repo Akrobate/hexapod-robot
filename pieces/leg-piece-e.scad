@@ -19,7 +19,7 @@ module legPieceE(
     screw_hole_offset_2 = 25,
 ) {
 
-    screw_hole_diameter = 3;
+    screw_hole_diameter = 3.5;
 
     _fn = 64;
     width = 10;

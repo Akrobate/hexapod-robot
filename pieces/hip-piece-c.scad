@@ -20,7 +20,7 @@ module hipPieceC(
     main_piece_height = 36;
     articluation_axis_diameter_offest = 0.2;
     
-    hole_diameter = 3;
+    hole_diameter = 3.5;
     
     _fn = 64;
 
