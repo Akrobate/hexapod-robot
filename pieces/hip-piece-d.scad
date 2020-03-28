@@ -1,5 +1,7 @@
 use <../envelopes/servo-envelope.scad>
 use <./subpieces/articulation-axis.scad>
+use <../assets/screw/screw.scad>
+use <../envelopes/screw-envelope.scad>
 
 hipPieceD();
 
@@ -15,7 +17,7 @@ hipPieceD();
 module hipPieceD() {
 
     _fn = 32;
-    debug_colors = false;
+    debug_colors = true;
     
     main_piece_color = "#FF0000";
     main_piece_height = 10;
@@ -55,5 +57,26 @@ module hipPieceD() {
                     );
             }
         }
+
+        translate([- (11.8 / 2) - 3 - 2.8, 0, 0]) {
+            translate([0, 6, 5])
+                rotate([0, 90, 0])
+                    screwEnvelope();
+
+            translate([0, -3, 5])
+                rotate([0, 90, 0])
+                    screwEnvelope();
+        }
+
+        translate([(11.8 / 2) + 3 + 2.8, 0, 0]) {
+            translate([0, 6, 5])
+                rotate([0, -90, 0])
+                    screwEnvelope();
+
+            translate([0, -3, 5])
+                rotate([0, -90, 0])
+                    screwEnvelope();
+        }
+
     }
 }
