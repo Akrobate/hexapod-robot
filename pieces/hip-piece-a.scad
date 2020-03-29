@@ -43,6 +43,10 @@ module hipPieceA() {
             ])
             servoEnvelope(servo_hole_scale = 1.05);
 
+        // Cable hole
+        translate([-2.5, 5, main_piece_height - 17])
+            cube([5, 10, 8]);
+
         translate([0, 0, -10]) {
         
             // B face screws holes
