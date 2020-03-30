@@ -12,7 +12,7 @@ hipSupportPieceB();
  */
 module hipSupportPieceB(
     length = 25,
-    width = 11.8 + 6
+    width = 18
 ) {
     thickness = 3;
     hole_diameter = 6;
