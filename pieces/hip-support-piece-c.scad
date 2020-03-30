@@ -9,9 +9,9 @@ hipSupportPieceC();
  * @parent LegHipComponent
  */
 module hipSupportPieceC(
-    length = 6,
-    width = 11.8 + 6,
-    height = 50
+    length = 8,
+    width = 18,
+    height = 50.3
 ) {
     translate([0, 0, height / 2])
     difference() {
