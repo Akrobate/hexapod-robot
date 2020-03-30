@@ -26,9 +26,24 @@ module hipSupport(param_s1) {
         color("violet")
             hipSupportPieceB();
 
-    translate([0, 25 - (6 / 2), a_b_thickness])
+    translate([0, 25 - (8 / 2), a_b_thickness])
         hipSupportPieceC(
             height = height
         );
+
+    // Screws bottom
+    translate([4.5, 25 - (8 / 2), -3])
+        screw();
+    translate([-4.5, 25 - (8 / 2), -3])
+        screw();
+    
+    // Screws top
+    translate([4.5, 25 - (8 / 2), height + a_b_thickness + 6])
+        rotate([0, 180, 0])
+            screw();
+
+    translate([-4.5, 25 - (8 / 2), height + a_b_thickness + 6])
+        rotate([0, 180, 0])
+            screw();
 
 }
