@@ -17,6 +17,8 @@ module hipSupportPieceB(
     thickness = 3;
     hole_diameter = 6;
 
+    screw_hole_diameter = 3.5;
+
     difference() {
         hull() {
             cylinder(h = thickness, r = width / 2, center = false, $fn = 64);
@@ -26,5 +28,12 @@ module hipSupportPieceB(
         }
 
         cylinder(h = thickness * 5, r = hole_diameter / 2, center = true, $fn = 64);
+
+        // Screw holes
+        translate([-4.5, length - 4, 0])
+            cylinder(h = thickness * 5, r = screw_hole_diameter / 2, center = true, $fn = 64);
+
+        translate([4.5, length - 4, 0])
+            cylinder(h = thickness * 5, r = screw_hole_diameter / 2, center = true, $fn = 64);
     }
 }
