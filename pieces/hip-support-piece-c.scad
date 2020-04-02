@@ -16,7 +16,7 @@ module hipSupportPieceC(
     height = 50.3
 ) {
 
-    holes_diameter = 3;
+    holes_diameter = 3.5;
 
     _fn = 64;
 
@@ -38,6 +38,19 @@ module hipSupportPieceC(
             translate([0, 0, 5])
                 rotate([90, 0, 0])
                     cylinder(r = holes_diameter / 2, h = length * 2, center = true, $fn = _fn);
+
+
+            // Places for screw heads
+            hull() {
+                translate([0, -3, -5])
+                    rotate([90, 0, 0]) {
+                        cylinder(r = 4.5, h = length, center = true, $fn = _fn);
+                    }
+                translate([0, -3, 5])
+                    rotate([90, 0, 0]) {
+                        cylinder(r = 4.5, h = length, center = true, $fn = _fn);
+                    }
+            }
 
             // Bottom screw holes
             translate([-4.5, 0, -height / 2 - 3])
