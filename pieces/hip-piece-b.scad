@@ -20,7 +20,7 @@ module hipPieceB(
     main_piece_height = 36;
     articluation_axis_diameter_offest = 0.2;
 
-    hole_diameter = 3.5;
+    screw_hole_diameter = 3.5;
 
     _fn = 64;
 
@@ -52,19 +52,19 @@ module hipPieceB(
         translate([1.5, 0, 0]) {
             translate([0, 6, 15])
                 rotate([0, -90, 0])
-                    cylinder(r = hole_diameter / 2, h = 10, center = true, $fn = _fn);
+                    cylinder(r = screw_hole_diameter / 2, h = 10, center = true, $fn = _fn);
 
             translate([0, -3, 15])
                 rotate([0, -90, 0])
-                    cylinder(r = hole_diameter / 2, h = 10, center = true, $fn = _fn);
+                    cylinder(r = screw_hole_diameter / 2, h = 10, center = true, $fn = _fn);
 
             translate([0, 6, 5])
                 rotate([0, -90, 0])
-                    cylinder(r = hole_diameter / 2, h = 10, center = true, $fn = _fn);
+                    cylinder(r = screw_hole_diameter / 2, h = 10, center = true, $fn = _fn);
 
             translate([0, -3, 5])
                 rotate([0, -90, 0])
-                    cylinder(r = hole_diameter / 2, h = 10, center = true, $fn = _fn);
+                    cylinder(r = screw_hole_diameter / 2, h = 10, center = true, $fn = _fn);
         }
     }
 }
