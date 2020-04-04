@@ -96,5 +96,15 @@ module hip(param_s1) {
                 rotate([0, -90, 0])
                     screw();
         }
+
+        // Screw servo arm articulation
+        translate([
+            -(11.8 / 2) - 3 - 7 - dispaly_screws_offset,
+            -15,
+            30
+        ])
+            rotate([0, 90, 0])
+                screw();
+
     }
 }
