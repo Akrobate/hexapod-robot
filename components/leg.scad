@@ -7,6 +7,8 @@ use <../pieces/leg-piece-e.scad>
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
 
+leg(90);
+
 /**
  * LegComponent
  * @name LegComponent
