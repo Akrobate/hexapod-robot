@@ -41,17 +41,4 @@ translate([0,0,0])
 
         translate([0,0,0])
             hip(param_s1 = leg_angle + 90);
-
-
-        if (display_screws) {
-            translate([
-                -(11.8 / 2) - 3 - 7,
-                -15,
-                30
-            ])
-               // Screw servo arm articulation
-                rotate([0, 90, 0])
-                    screw();
-        }
-
     }
