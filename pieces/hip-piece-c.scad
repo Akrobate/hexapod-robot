@@ -27,18 +27,20 @@ module hipPieceC(
 
     difference() {
 
-        translate(
-            [
-                0,
-                -32.2 + 5 + (11.8 / 2),
-                0
-            ])
+
             union() {
-                cube([3, 32.2, main_piece_height]);
                 translate(
                     [
                         0,
-                        32.2 - 5 - (11.8 / 2) + x_offset_top_axis,
+                        -32.2 + 5 + (11.8 / 2),
+                        0
+                    ])
+                    cube([3, 32.2, main_piece_height]);
+
+                translate(
+                    [
+                        0,
+                        x_offset_top_axis,
                         30
                     ])
                     rotate([0, -90, 0])
@@ -52,7 +54,7 @@ module hipPieceC(
                 translate(
                     [
                         0,
-                        32.2 - 5 - (11.8 / 2) + x_offset_bottom_axis,
+                        x_offset_bottom_axis,
                         7
                     ])
                     rotate([0, -90, 0])
