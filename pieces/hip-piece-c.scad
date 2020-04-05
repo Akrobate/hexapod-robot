@@ -1,4 +1,5 @@
 use <../envelopes/servo-envelope.scad>
+use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
 hipPieceC();
@@ -62,6 +63,11 @@ module hipPieceC(
                             axis_height = 3
                         );
             }
+
+        // Hole for the screw of the bottom articulation axis
+        translate([-4.01, x_offset_bottom_axis, 7])
+            rotate([0, 90, 0])
+                screwEnvelope(center_screwed_position = true);
 
         translate([1.5, 0, 0]) {
             translate([0, 6, 15])
