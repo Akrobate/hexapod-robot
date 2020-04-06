@@ -29,44 +29,43 @@ module hipPieceC(
 
     difference() {
 
+        union() {
+            translate(
+                [
+                    0,
+                    -32.2 + 5 + (11.8 / 2),
+                    0
+                ])
+                cube([3, 32.2, main_piece_height]);
 
-            union() {
-                translate(
-                    [
-                        0,
-                        -32.2 + 5 + (11.8 / 2),
-                        0
-                    ])
-                    cube([3, 32.2, main_piece_height]);
+            translate(
+                [
+                    0,
+                    x_offset_top_axis,
+                    30
+                ])
+                rotate([0, -90, 0])
+                    articulationAxisSubPiece(
+                        base_diameter = 10,
+                        base_height = 1,
+                        axis_diameter = 6 - articluation_axis_diameter_offest,
+                        axis_height = 3
+                    );
 
-                translate(
-                    [
-                        0,
-                        x_offset_top_axis,
-                        30
-                    ])
-                    rotate([0, -90, 0])
-                        articulationAxisSubPiece(
-                            base_diameter = 10,
-                            base_height = 1,
-                            axis_diameter = 6 - articluation_axis_diameter_offest,
-                            axis_height = 3
-                        );
-
-                translate(
-                    [
-                        0,
-                        x_offset_bottom_axis,
-                        7
-                    ])
-                    rotate([0, -90, 0])
-                        articulationAxisSubPiece(
-                            base_diameter = 10,
-                            base_height = 1,
-                            axis_diameter = 6 - articluation_axis_diameter_offest,
-                            axis_height = 3
-                        );
-            }
+            translate(
+                [
+                    0,
+                    x_offset_bottom_axis,
+                    7
+                ])
+                rotate([0, -90, 0])
+                    articulationAxisSubPiece(
+                        base_diameter = 10,
+                        base_height = 1,
+                        axis_diameter = 6 - articluation_axis_diameter_offest,
+                        axis_height = 3
+                    );
+        }
 
         // Hole for the screw of the bottom articulation axis
         if (display_optional_screw_holes)
