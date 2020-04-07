@@ -1,4 +1,5 @@
 use <../envelopes/servo-envelope.scad>
+use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
 legPieceB();
@@ -28,8 +29,15 @@ module legPieceB(
     articluation_axis_diameter_offest = 0.2;
 
     hole_diameter = 3;
+    // screw_hole_diameter
 
     translate([0, -servo_axis_offset, 0]) {
+
+    translate([0, 29 - 15, -10])
+        screwEnvelope();
+
+    translate([0, 29 - 25, -10])
+        screwEnvelope();
 
         union() {
             difference() {
