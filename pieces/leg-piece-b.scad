@@ -30,25 +30,41 @@ module legPieceB(
 
     translate([0, -servo_axis_offset, 0]) {
 
-        union() {
-            difference() {
+        difference() {
+            union() {
+            
                 hull() {
                     cylinder(h = thickness, r = width, center = false, $fn = _fn);
                     translate([0, length, 0])
-                    cylinder(h = thickness, r = width, center = false, $fn = _fn);
+                        cylinder(h = thickness, r = width, center = false, $fn = _fn);
                 }
 
-                translate([0, servo_axis_offset, 0])
-                    rotate([0, 0, 180])
-                        servoEnvelope();
+                translate([0, 0, thickness])
+                    hull() {
+                        cylinder(h = thickness * 2, r = width, center = false, $fn = _fn);
+                        translate([0, fixation_axis_offset, 0])
+                            cylinder(h = thickness * 2, r = width, center = false, $fn = _fn);
+                    }
+
+                translate([0, fixation_axis_offset, thickness]) {
+                    union() {
+                        cylinder(h = support_thickness, r = support_diameter / 2, center = false, $fn = _fn);
+
+                        translate([0, 0, support_thickness])
+                            articulationAxisSubPiece(
+                                base_diameter = 10,
+                                base_height = 1,
+                                axis_diameter = 6 - articluation_axis_diameter_offest,
+                                axis_height = 3
+                            );
+                    }
+                }
+
             }
 
-            translate([0, 0, thickness])
-                hull() {
-                    cylinder(h = thickness * 2, r = width, center = false, $fn = _fn);
-                    translate([0, fixation_axis_offset, 0])
-                        cylinder(h = thickness * 2, r = width, center = false, $fn = _fn);
-                }
+            translate([0, servo_axis_offset, 0])
+                rotate([0, 0, 180])
+                    servoEnvelope();
 
             // screw hole diameter (LegPieceE length - screw_hole_offset_1)
             translate([0, 29 - 15, -2.5])
@@ -57,23 +73,6 @@ module legPieceB(
             // screw hole diameter (LegPieceE length - screw_hole_offset_2)
             translate([0, 29 - 25, -2.5])
                 screwEnvelope(center_screwed_position = true);
-
-
-            translate([0, fixation_axis_offset, thickness]) {
-                union(){
-                    cylinder(h = support_thickness, r = support_diameter / 2, center = false, $fn = _fn);
-
-                    translate([0, 0, support_thickness])
-                        articulationAxisSubPiece(
-                            base_diameter = 10,
-                            base_height = 1,
-                            axis_diameter = 6 - articluation_axis_diameter_offest,
-                            axis_height = 3
-                        );
-                }
-            }
-
-
         }
     }
 }
