@@ -14,7 +14,6 @@ legPieceE();
  */
 module legPieceE(
     length = 29,
-    servo_axis_offset = 52,
     screw_hole_offset_1 = 15,
     screw_hole_offset_2 = 25,
 ) {
@@ -29,8 +28,6 @@ module legPieceE(
     support_thickness = 0.0;
     
     articluation_axis_diameter_offest = 0.2;
-
-    hole_diameter = 3;
 
     difference() {
 
