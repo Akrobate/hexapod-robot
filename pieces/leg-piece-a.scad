@@ -15,17 +15,18 @@ legPieceA();
 module legPieceA(
     length = 40,
     width = 6,
-    name = "A"
 ) {
     thickness = 3;
 
     hole_diameter = 6;
 
+    _fn = 64;
+
     difference() {
         hull() {
-            cylinder(h = thickness, r = width, center = false, $fn = 64);
+            cylinder(h = thickness, r = width, center = false, $fn = _fn);
             translate([0, length, 0])
-                cylinder(h = thickness, r = width, center = false, $fn = 64);
+                cylinder(h = thickness, r = width, center = false, $fn = _fn);
         }
 
         translate([0, 0, 1.4])
@@ -34,6 +35,6 @@ module legPieceA(
             servoArmEnvelope(hole_h = 10, arm_h = 3);
 
         translate([0, length, 0])
-            cylinder(h = thickness * 5, r = hole_diameter / 6, center = true, $fn = 64);
+            cylinder(h = thickness * 5, r = hole_diameter / 6, center = true, $fn = _fn);
     }
 }
