@@ -14,7 +14,7 @@ legPieceA();
  */
 module legPieceA(
     length = 40,
-    width = 6,
+    width = 6
 ) {
     thickness = 3;
 

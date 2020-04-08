@@ -30,7 +30,7 @@ module leg(param_s1 = 0) {
     rotate([0, 0, -angle_s1]) {
         translate([0, -hip_knee_distance, 0]) {
             translate([0, 0, 21])
-                legPieceA(length = hip_knee_distance, width = 6, name = "A");
+                legPieceA(length = hip_knee_distance, width = 6);
             
             translate([0,0, -8.2])
             rotate([0,0, angle_s1 - 90]) {
@@ -59,9 +59,9 @@ module leg(param_s1 = 0) {
         rotate([0, 0, -angle_s1 + 180]){
             translate([0, 0, 24])
                 mirror([0,0,1])
-                    legPieceC(length = hip_knee_distance, width = 6, name = "C1");
+                    legPieceC(length = hip_knee_distance, width = 6);
             translate([0, 0, -1.80])
-                legPieceC(length = hip_knee_distance, width = 6, name = "C2");
+                legPieceC(length = hip_knee_distance, width = 6);
 
             translate([0, 14, 1.2])
                 color("orange")
