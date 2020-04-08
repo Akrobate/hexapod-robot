@@ -15,14 +15,12 @@ legPieceC();
  *
  */
 module legPieceC(
-    length = 50,
-    width = 6,
-    name = "C"
+    length = 40,
+    width = 6
 ) {
     _fn = 64;
     thickness = 3;
     hole_diameter = 6;
-    font_deep = 0.5;
 
     // Fixations holes configuration
     screw_hole_diameter = 3.5;
