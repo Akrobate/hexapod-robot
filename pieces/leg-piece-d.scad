@@ -12,7 +12,7 @@ legPieceD();
  * @parent LegComponent
  */
 module legPieceD(
-    length = 30,
+    length = 11.8 + 3 + 3 + 1 + 1,
     height = 8,
     width = 8,
     _fn = 64
