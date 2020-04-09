@@ -27,9 +27,8 @@ module hipSupport(param_s1) {
             hipSupportPieceB();
 
     translate([0, 25 - (8 / 2), a_b_thickness])
-        hipSupportPieceC(
-            height = height
-        );
+        // hipSupportPieceC(height = height);
+        hipSupportPieceC();
 
     // Screws bottom
     translate([4.5, 25 - (8 / 2), -3])
