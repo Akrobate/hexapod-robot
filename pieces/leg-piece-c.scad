@@ -1,4 +1,14 @@
-legPieceC();
+
+// Printable positionning
+
+translate([10, 0, 3])
+    rotate([0, 180, 0])
+    legPieceC();
+
+translate([-10, 0, 3])
+    rotate([0, 180, 0])
+        mirror([1, 0, 0])
+            legPieceC();
 
 /**
  * LegPieceC
