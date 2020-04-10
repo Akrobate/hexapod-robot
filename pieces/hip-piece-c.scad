@@ -1,8 +1,10 @@
-use <../envelopes/servo-envelope.scad>
 use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
-hipPieceC();
+// Positionning for printing
+translate([0, 0, 3])
+    rotate([0, 90, 0])
+        hipPieceC();
 
 /**
  * HipPieceC

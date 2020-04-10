@@ -35,6 +35,6 @@ module legPieceA(
             servoArmEnvelope(hole_h = 10, arm_h = 3);
 
         translate([0, length, 0])
-            cylinder(h = thickness * 5, r = hole_diameter / 6, center = true, $fn = _fn);
+            cylinder(h = thickness * 5, r = hole_diameter / 2, center = true, $fn = _fn);
     }
 }
