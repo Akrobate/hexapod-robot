@@ -3,7 +3,10 @@ use <./subpieces/articulation-axis.scad>
 use <../assets/screw/screw.scad>
 use <../envelopes/screw-envelope.scad>
 
-hipPieceD();
+// Positionning for printing
+translate([0, 0, 10])
+    rotate([180, 0, 0])
+        hipPieceD();
 
 /**
  * HipPieceD
