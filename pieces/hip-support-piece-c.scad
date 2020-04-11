@@ -1,6 +1,9 @@
 use <../envelopes/screw-envelope.scad>
 
-hipSupportPieceC();
+// Positionning for printing
+translate([0, -25, 4])
+    rotate([-90, 0, 0])
+        hipSupportPieceC();
 
 /**
  * hipSupportPieceC
