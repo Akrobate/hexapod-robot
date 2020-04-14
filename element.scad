@@ -11,9 +11,10 @@ leg_angle = 45 + ($t < 0.5 ? $t * 180 : 180 - $t * 180);
 // min: 60
 // max: 120
 leg_angle = 90;
-
+angle_knee = 0;
+angle_hip = 0;
 
 hipLeg(
-    leg_angle,
-    leg_angle
+    angle_knee,
+    angle_hip
 );
