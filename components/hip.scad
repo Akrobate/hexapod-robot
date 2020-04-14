@@ -46,7 +46,7 @@ module hip(param_s1) {
         hipPieceC();
  
     translate([0, 0, 36 - 15.9])
-        servoMotor(param_s1);
+        servoMotor(param_s1 + 90);
 
 
     if (display_screws) {
