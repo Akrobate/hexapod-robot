@@ -7,7 +7,7 @@ use <../pieces/leg-piece-e.scad>
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
 
-leg(90);
+leg();
 
 /**
  * LegComponent
@@ -18,25 +18,20 @@ leg(90);
  * @type component
  * @parent HipLeg
  */
-module leg(param_s1 = 0) {
-    angle_s1_start = -90;
+module leg(servo_angle = 0) {
     
-    angle_s1 = param_s1 + angle_s1_start;
-
     hip_knee_distance = 40;
 
-    
-
-    rotate([0, 0, -angle_s1]) {
+    rotate([0, 0, -servo_angle]) {
         translate([0, -hip_knee_distance, 0]) {
             translate([0, 0, 21])
                 // legPieceA(length = hip_knee_distance, width = 6);
                 legPieceA();
             
             translate([0,0, -8.2])
-            rotate([0,0, angle_s1 - 90]) {
+            rotate([0,0, servo_angle - 90]) {
                 rotate([0, 0, 180])
-                    servoMotor(angle_s1 - 90);
+                    servoMotor(servo_angle - 90);
 
                 translate([0, 0, 15.9 - 3]) {
                     legPieceB();
@@ -57,7 +52,7 @@ module leg(param_s1 = 0) {
     }
 
     translate([-23, 0, 0])
-        rotate([0, 0, -angle_s1 + 180]){
+        rotate([0, 0, -servo_angle + 180]){
             translate([0, 0, 24])
                 mirror([0,0,1])
                     // legPieceC(length = hip_knee_distance, width = 6);
