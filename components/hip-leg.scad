@@ -3,7 +3,10 @@ use <hip.scad>
 use <hip-support.scad>
 use <../assets/screw/screw.scad>
 
-hipLeg();
+hipLeg(
+    angle_knee = 0,
+    angle_hip = 0
+);
 
 /**
  * HipLeg
@@ -14,8 +17,8 @@ hipLeg();
  */
 
 module hipLeg(
-    angle_knee = 90,
-    angle_hip = 90,
+    angle_knee = 0,
+    angle_hip = 0,
     display_screws = true
 ) {
 
@@ -23,10 +26,10 @@ module hipLeg(
         translate([0, 0, -3 -1])
             hipSupport();
 
-    rotate([0, 0, angle_hip]) {
-        translate([11.1, -15, 30]) // 10
+    rotate([0, 0, angle_hip + 90]) {
+        translate([11.1, -15, 30])
             rotate([0, -90, 0])
-                leg(param_s1 = angle_knee);
+                leg(servo_angle = angle_knee);
 
         translate([0,0,0])
             hip(param_s1 = angle_hip + 90);
