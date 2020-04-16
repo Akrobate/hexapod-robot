@@ -24,7 +24,7 @@ module hipLeg(
 ) {
 
     if (center_on_fixation) {
-        translate([25.0, 0, 0])
+        translate([25.0, 0, -24.15])
             assembly();
     } else {
         assembly();
