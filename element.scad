@@ -15,7 +15,7 @@ angle_knee = 0;
 angle_hip = 0;
 
 bot_length = 150;
-bot_width = 50;
+bot_width = 60;
 bone_size = 2;
 
 // left side
@@ -32,14 +32,18 @@ translate([ - bot_length / 2, bot_width / 2, 0])
         hipLeg(angle_knee, angle_hip);
 
 // right side
+
 translate([bot_length / 2, - bot_width / 2, 0])
     rotate([0, 0, -90])
-        hipLeg(angle_knee, angle_hip);
+        mirror([0, 1, 0])
+            hipLeg(angle_knee, angle_hip);
 
 translate([0, - bot_width / 2, 0])
     rotate([0, 0, -90])
-        hipLeg(angle_knee, angle_hip);
+        mirror([0, 1, 0])
+            hipLeg(angle_knee, angle_hip);
 
 translate([ - bot_length / 2, - bot_width / 2, 0])
     rotate([0, 0, -90])
-        hipLeg(angle_knee, angle_hip);
+        mirror([0, 1, 0])
+            hipLeg(angle_knee, angle_hip);
