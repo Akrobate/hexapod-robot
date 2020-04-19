@@ -13,7 +13,20 @@ hexapodRobot();
  * @parent root
  */
 
-module hexapodRobot() {
+module hexapodRobot(
+    left_leg_1_hip = 0,
+    left_leg_2_hip = 0,
+    left_leg_3_hip = 0,
+    right_leg_1_hip = 0,
+    right_leg_2_hip = 0,
+    right_leg_3_hip = 0,
+    left_leg_1_knee = 0,
+    left_leg_2_knee = 0,
+    left_leg_3_knee = 0,
+    right_leg_1_knee = 0,
+    right_leg_2_knee = 0,
+    right_leg_3_knee = 0
+) {
 
     // leg tests
     angle = $t < 0.5 ? $t * 360 : 360 - $t * 360;
@@ -34,29 +47,29 @@ module hexapodRobot() {
     // left side
     translate([bot_length / 2, bot_width / 2, 0])
         rotate([0, 0, 90])
-            hipLeg(angle_knee, angle_hip);
+            hipLeg(left_leg_1_knee, left_leg_1_hip);
 
     translate([0, bot_width / 2, 0])
         rotate([0, 0, 90])
-            hipLeg(angle_knee, angle_hip);
+            hipLeg(left_leg_2_knee, left_leg_2_hip);
 
     translate([ - bot_length / 2, bot_width / 2, 0])
         rotate([0, 0, 90])
-            hipLeg(angle_knee, angle_hip);
+            hipLeg(left_leg_3_knee, left_leg_3_hip);
 
     // right side
     translate([bot_length / 2, - bot_width / 2, 0])
         rotate([0, 0, -90])
             mirror([0, 1, 0])
-                hipLeg(angle_knee, angle_hip);
+                hipLeg(right_leg_1_knee, right_leg_1_hip);
 
     translate([0, - bot_width / 2, 0])
         rotate([0, 0, -90])
             mirror([0, 1, 0])
-                hipLeg(angle_knee, angle_hip);
+                hipLeg(right_leg_2_knee, right_leg_2_hip);
 
     translate([ - bot_length / 2, - bot_width / 2, 0])
         rotate([0, 0, -90])
             mirror([0, 1, 0])
-                hipLeg(angle_knee, angle_hip);
+                hipLeg(right_leg_3_knee, right_leg_3_hip);
 }
