@@ -14,6 +14,7 @@ hipLeg(
  * @description HipLeg
  * @tag component
  * @type component
+ * @parent hexapodRobot
  */
 
 module hipLeg(
