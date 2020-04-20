@@ -31,6 +31,10 @@ module hexapodRobot(
     bot_length = 150;
     bot_width = 60;
 
+    // body
+    translate([- bot_length / 2, - bot_width / 2, -1.5])
+        body();
+
     // left side
     translate([bot_length / 2, bot_width / 2, 0])
         rotate([0, 0, 90])
