@@ -1,3 +1,4 @@
+use <../pieces/body-piece-a.scad>
 
 body();
 
@@ -12,10 +13,5 @@ module body() {
     bot_length = 150;
     bot_width = 60;
 
-    cube([
-        bot_length + 20,
-        bot_width,
-        3,
-    ]);
-
+    bodyPieceA();
 }
