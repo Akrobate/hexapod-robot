@@ -11,9 +11,21 @@ bodyPieceA();
  */
 
 module bodyPieceA(){
-    cube([
-        170,
-        60,
-        3,
-    ]);
+    
+    difference() {
+        cube([
+            150,
+            60,
+            3,
+        ]);
+
+
+        translate([10, 10, -1])
+            cube([
+                130,
+                40,
+                5,
+            ]); 
+
+    }
 }
