@@ -1,5 +1,6 @@
 use <../pieces/body-piece-a.scad>
 use <../pieces/body-piece-b.scad>
+use <../pieces/body-piece-c.scad>
 
 body();
 
@@ -26,7 +27,6 @@ module body() {
         bodyPieceB();
 
     
-
     translate([0, 4, 0])
         rotate([0, 0, 180])
             bodyPieceB();
@@ -38,4 +38,15 @@ module body() {
     translate([bot_length, 4, 0])
         rotate([0, 0, 180])
             bodyPieceB();
+
+
+    // Links between legs blocks
+    translate([-9, 0, 40])
+        bodyPieceC();
+
+    translate([-9 + bot_length / 2, 0, 40])
+        bodyPieceC();
+    
+    translate([-9 + bot_length, 0, 40])
+        bodyPieceC();
 }
