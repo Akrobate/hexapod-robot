@@ -1,17 +1,15 @@
 use <../envelopes/screw-envelope.scad>
 
 // Positionning for printing
-translate([0, -25, 4])
-    rotate([-90, 0, 0])
-        hipSupportPieceC();
+bodyPieceB();
 
 /**
- * hipSupportPieceC
- * @name hipSupportPieceC
- * @description Holds the hip component
+ * bodyPieceB
+ * @name bodyPieceB
+ * @description Piece to fix legs
  * @tag piece
  * @type piece
- * @parent LegHipComponent
+ * @parent bodyComponent
  */
 module bodyPieceB(
     length = 8,
