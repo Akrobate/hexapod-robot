@@ -15,8 +15,6 @@ module body() {
     bot_length = 150;
     bot_width = 60;
 
-    bodyPieceA();
-
     translate([0, bot_width - 4, 0])
         bodyPieceB();
 
@@ -40,7 +38,7 @@ module body() {
             bodyPieceB();
 
 
-    // Links between legs blocks
+    // Links between legs blocks top side
     translate([-9, 0, 40])
         bodyPieceC();
 
@@ -48,5 +46,16 @@ module body() {
         bodyPieceC();
     
     translate([-9 + bot_length, 0, 40])
+        bodyPieceC();
+
+    
+    // Links between legs blocks
+    translate([-9, 0, -3])
+        bodyPieceC();
+
+    translate([-9 + bot_length / 2, 0, -3])
+        bodyPieceC();
+    
+    translate([-9 + bot_length, 0, -3])
         bodyPieceC();
 }
