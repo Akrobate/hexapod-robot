@@ -32,7 +32,7 @@ module hexapodRobot(
     bot_width = 60;
 
     // body
-    translate([- bot_length / 2, - bot_width / 2, -1.5])
+    translate([- bot_length / 2, - bot_width / 2, -20])
         body();
 
     // left side
