@@ -1,7 +1,9 @@
 
 bodyPieceD();
 
-module bodyPieceD() {
+module bodyPieceD(
+    with_platform = true
+) {
 
     fixations_position_lenth = 60;
     fixations_position_width = 40;
@@ -48,12 +50,13 @@ module bodyPieceD() {
         }
 
         // Platfor for components
-        translate([
-            fixations_position_lenth / 2,
-            fixations_position_width / 2,
-            thickness / 2 + platform_z_offset
-            ])
-            cube([platform_lenth, platform_width, thickness], center = true);
+        if (with_platform)
+            translate([
+                fixations_position_lenth / 2,
+                fixations_position_width / 2,
+                thickness / 2 + platform_z_offset
+                ])
+                cube([platform_lenth, platform_width, thickness], center = true);
 
     }
 
