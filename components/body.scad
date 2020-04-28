@@ -1,6 +1,7 @@
 use <../pieces/body-piece-a.scad>
 use <../pieces/body-piece-b.scad>
 use <../pieces/body-piece-c.scad>
+use <../pieces/body-piece-d.scad>
 
 body();
 
@@ -15,6 +16,12 @@ module body() {
     bot_length = 150;
     bot_width = 60;
 
+
+    translate([4.5, 12, 0])
+        bodyPieceD();
+
+
+    // support for legs (vertical pieces)
     translate([0, bot_width - 4, 0])
         bodyPieceB();
 
@@ -38,7 +45,7 @@ module body() {
             bodyPieceB();
 
 
-    // Links between legs blocks top side
+    // Links between legs blocks top side (horizonal pieces)
     translate([-9, 0, 40])
         bodyPieceC();
 
@@ -49,7 +56,7 @@ module body() {
         bodyPieceC();
 
     
-    // Links between legs blocks
+    // Links between legs blocks (horizonal pieces)
     translate([-9, 0, -3])
         bodyPieceC();
 
