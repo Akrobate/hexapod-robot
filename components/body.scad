@@ -20,6 +20,14 @@ module body() {
     translate([4.5, 12, 0])
         bodyPieceD();
 
+    translate([4.5, 12, 37])
+        bodyPieceD();
+
+    translate([4.5 + 75, 12, 0])
+        bodyPieceD();
+
+    translate([4.5 + 75, 12, 37])
+        bodyPieceD();
 
     // support for legs (vertical pieces)
     translate([0, bot_width - 4, 0])
