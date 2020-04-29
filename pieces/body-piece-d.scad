@@ -8,11 +8,11 @@ module bodyPieceD(
     fixations_position_lenth = 66;
     fixations_position_width = 36;
 
-    branches_width = 12;
+    branches_width = 7.5;
 
     platform_lenth = 40;
     platform_width = 30;
-    platform_z_offset = 1;
+    platform_z_offset = 0;
 
     _fn = 64;
     thickness = 3;
