@@ -6,8 +6,7 @@ bodyPieceB();
 /**
  * bodyPieceB
  * @name bodyPieceB
- * @description Piece to fix legs
- * @tag piece
+ * @description Piece to hold hipSupport
  * @type piece
  * @parent bodyComponent
  */

@@ -2,9 +2,9 @@
 bodyPieceC();
 
 /**
- * bodyPieceA
- * @name bodyPieceA
- * @description Body piece A
+ * bodyPieceC
+ * @name bodyPieceC
+ * @description Piece to join left and right legs
  * @type piece
  * @parent bodyComponent
  */

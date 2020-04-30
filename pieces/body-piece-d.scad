@@ -1,6 +1,13 @@
 
 bodyPieceD();
 
+/**
+ * bodyPieceD
+ * @name bodyPieceD
+ * @description Joins sections of body
+ * @type piece
+ * @parent bodyComponent
+ */
 module bodyPieceD(
     with_platform = true
 ) {
