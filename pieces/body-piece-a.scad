@@ -1,14 +1,14 @@
 
-bodyPieceD();
+bodyPieceA();
 
 /**
- * bodyPieceD
- * @name bodyPieceD
+ * bodyPieceA
+ * @name bodyPieceA
  * @description Joins sections of body
  * @type piece
  * @parent bodyComponent
  */
-module bodyPieceD(
+module bodyPieceA(
     with_platform = true
 ) {
 
