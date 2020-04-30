@@ -1,4 +1,3 @@
-use <../pieces/body-piece-a.scad>
 use <../pieces/body-piece-b.scad>
 use <../pieces/body-piece-c.scad>
 use <../pieces/body-piece-d.scad>
