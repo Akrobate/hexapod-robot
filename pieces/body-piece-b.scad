@@ -9,6 +9,7 @@ bodyPieceB();
  * @description Piece to hold hipSupport
  * @type piece
  * @parent bodyComponent
+ * @stl
  */
 module bodyPieceB(
     length = 8,

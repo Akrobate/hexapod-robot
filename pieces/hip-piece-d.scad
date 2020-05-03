@@ -12,14 +12,13 @@ translate([0, 0, 10])
  * HipPieceD
  * @name HipPieceD
  * @description Hip Piece D
- * @category hip
- * @tag piece
  * @type piece
  * @parent HipComponent
+ * @stl 
  */
 module hipPieceD() {
 
-    _fn = 32;
+    _fn = 64;
     debug_colors = true;
     
     main_piece_color = "#FF0000";

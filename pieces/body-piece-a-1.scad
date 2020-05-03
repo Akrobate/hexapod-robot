@@ -8,6 +8,7 @@ bodyPieceA1();
  * @description Joins sections of body
  * @type piece
  * @parent bodyComponent
+ * @stl
  */
 module bodyPieceA1() {
     bodyPieceA(false);

@@ -6,9 +6,9 @@ hipSupportPieceA();
  * hipSupportPieceA
  * @name hipSupportPieceA
  * @description Holds the hip component
- * @tag piece
  * @type piece
  * @parent LegHipComponent
+ * @stl
  */
 module hipSupportPieceA(
     length = 25,

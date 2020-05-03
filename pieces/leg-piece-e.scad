@@ -8,9 +8,9 @@ legPieceE();
  * @name LegPieceE
  * @description Leg Piece E
  * @category leg
- * @tag piece
  * @type piece
  * @parent LegComponent
+ * @stl
  */
 module legPieceE(
     length = 29,

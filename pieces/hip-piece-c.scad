@@ -10,10 +10,9 @@ translate([0, 0, 3])
  * HipPieceC
  * @name HipPieceC
  * @description Hip Piece C
- * @category hip
- * @tag piece
  * @type piece
  * @parent HipComponent
+ * @stl
  */
 module hipPieceC(
     x_offset_top_axis = -15,

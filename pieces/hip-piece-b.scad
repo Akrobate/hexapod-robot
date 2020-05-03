@@ -10,10 +10,9 @@ rotate([0, -90, 0])
  * HipPieceB
  * @name HipPieceB
  * @description Hip Piece B
- * @category hip
- * @tag piece
  * @type piece
  * @parent HipComponent
+ * @stl 
  */
 module hipPieceB(
     x_offset_top_axis = -15,

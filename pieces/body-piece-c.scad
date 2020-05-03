@@ -7,6 +7,7 @@ bodyPieceC();
  * @description Piece to join left and right legs
  * @type piece
  * @parent bodyComponent
+ * @stl 
  */
 
 module bodyPieceC(
