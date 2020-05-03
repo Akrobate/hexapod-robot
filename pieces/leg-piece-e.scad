@@ -7,7 +7,6 @@ legPieceE();
  * LegPieceE
  * @name LegPieceE
  * @description Leg Piece E
- * @category leg
  * @type piece
  * @parent LegComponent
  * @stl

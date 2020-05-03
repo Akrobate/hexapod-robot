@@ -9,9 +9,9 @@ translate([0, -25, 4])
  * hipSupportPieceC
  * @name hipSupportPieceC
  * @description Holds the hip component
- * @tag piece
  * @type piece
  * @parent LegHipComponent
+ * @stl 
  */
 module hipSupportPieceC(
     length = 8,

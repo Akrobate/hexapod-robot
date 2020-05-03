@@ -6,10 +6,9 @@ legPieceD();
  * LegPieceD
  * @name LegPieceD
  * @description Leg Piece D
- * @category leg
- * @tag piece
  * @type piece
  * @parent LegComponent
+ * @stl 
  */
 module legPieceD(
     length = 11.8 + 3 + 3 + 1 + 1,

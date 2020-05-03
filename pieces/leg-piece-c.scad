@@ -14,15 +14,9 @@ translate([-10, 0, 3])
  * LegPieceC
  * @name LegPieceC
  * @description Leg Piece C
- * @category leg
- * @type piece
  * @type piece
  * @parent LegComponent
- *
- * @param {Number} length - the length beetween the two asis holes
- * @param {Number} width - the width of the piece
- * @param {String} name - the name of the piece
- *
+ * @stl
  */
 module legPieceC(
     length = 40,

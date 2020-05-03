@@ -7,10 +7,9 @@ legPieceA();
  * LegPieceA
  * @name LegPieceA
  * @description Hold servo arm to the leg
- * @category leg
- * @tag piece
  * @type piece
  * @parent LegComponent
+ * @stl
  */
 module legPieceA(
     length = 40,

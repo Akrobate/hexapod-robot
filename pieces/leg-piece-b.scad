@@ -8,10 +8,9 @@ legPieceB();
  * LegPieceB
  * @name LegPieceB
  * @description Leg Piece B (Holds servo motor)
- * @category leg
- * @tag piece
  * @type piece
  * @parent LegComponent
+ * @stl
  */
 module legPieceB(
     length = 70,
