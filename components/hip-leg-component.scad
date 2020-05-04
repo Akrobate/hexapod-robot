@@ -3,7 +3,7 @@ use <hip.scad>
 use <hip-support.scad>
 use <../assets/screw/screw.scad>
 
-hipLeg(
+hipLegComponent(
     angle_knee = 0,
     angle_hip = 0
 );
@@ -17,7 +17,7 @@ hipLeg(
  * @parent hexapodRobot
  */
 
-module hipLeg(
+module hipLegComponent(
     angle_knee = 0,
     angle_hip = 0,
     center_on_fixation = true,

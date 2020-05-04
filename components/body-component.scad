@@ -3,16 +3,16 @@ use <../pieces/body-piece-a-1.scad>
 use <../pieces/body-piece-b.scad>
 use <../pieces/body-piece-c.scad>
 
-body();
+bodyComponent();
 
 /**
  * bodyComponent
  * @name bodyComponent
  * @description Body assembly component
  * @type component
- * @parent hexapodRobot
+ * @parent hexapodRobotComponent
  */
-module body() {
+module bodyComponent() {
     bot_length = 150;
     bot_width = 60;
 
