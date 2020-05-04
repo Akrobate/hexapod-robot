@@ -1,6 +1,6 @@
 use <leg.scad>
 use <hip.scad>
-use <hip-support.scad>
+use <hip-support-component.scad>
 use <../assets/screw/screw.scad>
 
 hipLegComponent(
@@ -9,14 +9,12 @@ hipLegComponent(
 );
 
 /**
- * HipLeg
- * @name legElement
+ * hipLegComponent
+ * @name hipLegComponent
  * @description HipLeg
- * @tag component
  * @type component
  * @parent hexapodRobot
  */
-
 module hipLegComponent(
     angle_knee = 0,
     angle_hip = 0,
@@ -34,7 +32,7 @@ module hipLegComponent(
     module assembly() {
         rotate([0, 0, 90])
             translate([0, 0, -3 -1])
-                hipSupport();
+                hipSupportComponent();
 
         rotate([0, 0, angle_hip + 90]) {
             translate([11.1, -15, 30])

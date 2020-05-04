@@ -3,17 +3,16 @@ use <../pieces/hip-support-piece-b.scad>
 use <../pieces/hip-support-piece-c.scad>
 use <../assets/screw/screw.scad>
 
-hipSupport();
+hipSupportComponent();
 
 /**
  * HipSupportComponent
  * @name HipSupportComponent
  * @description Hip support assembly
- * @category HipLeg
  * @type component
- * @parent HipLeg
+ * @parent HipLegComponent
  */
-module hipSupport(param_s1) {
+module hipSupportComponent(param_s1) {
     
     height = 50.3;
     a_b_thickness = 3;
