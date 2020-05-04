@@ -5,17 +5,17 @@ use <../pieces/hip-piece-d.scad>
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
 
-hip();
+hipComponent();
 
 /**
- * HipComponent
- * @name HipComponent
+ * hipComponent
+ * @name hipComponent
  * @description Hip assembly
  * @category HipLeg
  * @type component
- * @parent HipLeg
+ * @parent hipLegComponent
  */
-module hip(param_s1) {
+module hipComponent(param_s1) {
 
     // Display params
     display_screws = true;

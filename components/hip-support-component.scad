@@ -6,11 +6,11 @@ use <../assets/screw/screw.scad>
 hipSupportComponent();
 
 /**
- * HipSupportComponent
- * @name HipSupportComponent
+ * hipSupportComponent
+ * @name hipSupportComponent
  * @description Hip support assembly
  * @type component
- * @parent HipLegComponent
+ * @parent hipLegComponent
  */
 module hipSupportComponent(param_s1) {
     
