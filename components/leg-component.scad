@@ -7,18 +7,18 @@ use <../pieces/leg-piece-e.scad>
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
 
-leg();
+legComponent();
 
 /**
- * LegComponent
- * @name LegComponent
+ * legComponent
+ * @name legComponent
  * @description Leg assembly
  * @category HipLeg
  * @tag component
  * @type component
  * @parent HipLeg
  */
-module leg(servo_angle = 0) {
+module legComponent(servo_angle = 0) {
     
     hip_knee_distance = 40;
 

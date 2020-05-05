@@ -1,4 +1,4 @@
-use <leg.scad>
+use <leg-component.scad>
 use <hip-component.scad>
 use <hip-support-component.scad>
 use <../assets/screw/screw.scad>
@@ -37,7 +37,7 @@ module hipLegComponent(
         rotate([0, 0, angle_hip + 90]) {
             translate([11.1, -15, 30])
                 rotate([0, -90, 0])
-                    leg(servo_angle = angle_knee);
+                    legComponent(servo_angle = angle_knee);
 
             translate([0,0,0])
                 hipComponent(param_s1 = angle_hip + 90);
