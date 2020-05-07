@@ -7,7 +7,6 @@ articulationAxisScrewSubPiece();
  * articulationAxisScrewSubPiece
  * @name articulationAxisScrewSubPiece
  * @description articlulation axix with screw throw
- * @tag subPiece
  * @type subPiece
  */
 module articulationAxisScrewSubPiece(
