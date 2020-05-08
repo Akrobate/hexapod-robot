@@ -11,7 +11,6 @@ hipComponent();
  * hipComponent
  * @name hipComponent
  * @description Hip assembly
- * @category HipLeg
  * @type component
  * @parent hipLegComponent
  */

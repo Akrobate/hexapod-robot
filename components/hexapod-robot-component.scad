@@ -8,7 +8,6 @@ hexapodRobotComponent();
  * hexapodRobotComponent
  * @name hexapodRobotComponent
  * @description Full robot assembly
- * @category hexapodRobot
  * @type component
  * @parent root
  */
