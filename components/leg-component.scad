@@ -7,16 +7,16 @@ use <../pieces/leg-piece-e.scad>
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
 
-legComponent();
+translate([0, 0, 50])
+    rotate([0, -90, 0])
+        legComponent();
 
 /**
  * legComponent
  * @name legComponent
  * @description Leg assembly
- * @category HipLeg
- * @tag component
  * @type component
- * @parent HipLeg
+ * @parent hipLegComponent
  */
 module legComponent(servo_angle = 0) {
     
