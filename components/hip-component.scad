@@ -25,8 +25,7 @@ module hipComponent(param_s1) {
     dispaly_HipPieceC_offset = display_general_offset; // Totaly mounted should be 0
 
     translate([0, 0, 10])
-        color("#337733")
-            hipPieceA();
+        hipPieceA();
     
     hipPieceD();
 
