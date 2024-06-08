@@ -1,5 +1,29 @@
-use <./skeleton/assembly.scad>
-use <./animations/walking-v1.scad>
+use <components/hexapod-robot-component.scad>
 
-animation_angle = walkingV1($t);
-skeletonAssembly(animation_angle);
+// leg tests
+angle = $t < 0.5 ? $t * 360 : 360 - $t * 360;
+// angle = 90;
+// rotate([0, 0, angle])
+leg_angle = 45 + ($t < 0.5 ? $t * 180 : 180 - $t * 180);
+
+// min: 60
+// max: 120
+leg_angle = 90;
+angle_knee = 0;
+angle_hip = -20;
+
+
+hexapodRobotComponent(
+    left_leg_1_hip = angle_hip,
+    left_leg_2_hip = -angle_hip,
+    left_leg_3_hip = angle_hip,
+    right_leg_1_hip = -angle_hip,
+    right_leg_2_hip = angle_hip,
+    right_leg_3_hip = -angle_hip,
+    left_leg_1_knee = angle_knee,
+    left_leg_2_knee = angle_knee,
+    left_leg_3_knee = angle_knee,
+    right_leg_1_knee = angle_knee,
+    right_leg_2_knee = angle_knee,
+    right_leg_3_knee = angle_knee
+);
