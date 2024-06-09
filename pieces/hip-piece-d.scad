@@ -19,7 +19,7 @@ translate([0, 0, 10])
 module hipPieceD() {
 
     _fn = 64;
-    debug_colors = true;
+    debug_colors = false;
     
     main_piece_color = "#FF0000";
     main_piece_height = 10;

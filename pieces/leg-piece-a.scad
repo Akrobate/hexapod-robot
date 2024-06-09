@@ -29,7 +29,6 @@ module legPieceA(
         }
 
         translate([0, 0, 1.4])
-            // scaling to prevent same size object
             scale([1.02, 1.02, 1])
             servoArmEnvelope(hole_h = 10, arm_h = 3);
 
