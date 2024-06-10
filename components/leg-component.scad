@@ -55,15 +55,11 @@ module legComponent(servo_angle = 0) {
         rotate([0, 0, -servo_angle + 180]){
             translate([0, 0, 24])
                 mirror([0,0,1])
-                    // legPieceC(length = hip_knee_distance, width = 6);
                     legPieceC();
             translate([0, 0, -1.80])
-                // legPieceC(length = hip_knee_distance, width = 6);
                 legPieceC();
 
             translate([0, 14, 1.2])
-                color("orange")
-                //legPieceD(length = 11.8 + 3 + 3 + 1 + 1, height = 8, width = 8)
                 legPieceD();
 
             screws_offset = -1;
