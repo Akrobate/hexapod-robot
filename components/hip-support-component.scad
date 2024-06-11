@@ -18,12 +18,10 @@ module hipSupportComponent(param_s1) {
     a_b_thickness = 3;
 
     translate([0, 0, height + a_b_thickness])
-        color("violet")
-            hipSupportPieceA();
+        hipSupportPieceA();
 
     translate([0, 0, 0])
-        color("violet")
-            hipSupportPieceB();
+        hipSupportPieceB();
 
     translate([0, 25 - (8 / 2), a_b_thickness])
         // hipSupportPieceC(height = height);
