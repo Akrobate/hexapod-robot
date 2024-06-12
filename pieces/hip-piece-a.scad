@@ -15,9 +15,7 @@ hipPieceA();
 module hipPieceA() {
 
     _fn = 32;
-    debug_colors = false;
-    
-    main_piece_color = "#FF0000";
+
     main_piece_height = 26;
 
     difference() {
@@ -27,7 +25,6 @@ module hipPieceA() {
                 - 22.2 + (11.8 / 2) - 5,
                 - 0
             ])
-            color(debug_colors ? main_piece_color : "")
             cube(
                 [
                     11.8,

@@ -19,15 +19,9 @@ translate([0, 0, 10])
 module hipPieceD() {
 
     _fn = 64;
-    debug_colors = false;
-    
-    main_piece_color = "#FF0000";
-    main_piece_height = 10;
-    
-    articulation_support_color = "#00FF00";
-    articulation_support_height = 1;
 
-    articulation_color = "#0000FF";
+    main_piece_height = 10;
+    articulation_support_height = 1;
     articulation_height = 3;
 
     articluation_axis_diameter_offest = 0.2;
@@ -40,7 +34,6 @@ module hipPieceD() {
                     - 22.2 + (11.8 / 2) - 5,
                     - 0
                 ])
-                color(debug_colors ? main_piece_color : "")
                 cube(
                     [
                         11.8,
