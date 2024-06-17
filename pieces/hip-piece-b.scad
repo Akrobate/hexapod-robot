@@ -51,6 +51,21 @@ module hipPieceB(
                         axis_diameter = 6 - articluation_axis_diameter_offest,
                         axis_height = 3
                     );
+
+            translate(
+                [
+                    3,
+                    x_offset_bottom_axis,
+                    30
+                ])
+                rotate([0, 90, 0])
+                    articulationAxisSubPiece(
+                        base_diameter = 10,
+                        base_height = 1,
+                        axis_diameter = 6 - articluation_axis_diameter_offest,
+                        axis_height = 3
+                    );
+
         }
 
         // Hole for the screw of the bottom articulation axis
