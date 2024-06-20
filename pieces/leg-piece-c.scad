@@ -1,14 +1,5 @@
+use <./subpieces/bone.scad>
 
-// Printable positionning
-
-translate([10, 0, 3])
-    rotate([0, 180, 0])
-    legPieceC();
-
-translate([-10, 0, 3])
-    rotate([0, 180, 0])
-        mirror([1, 0, 0])
-            legPieceC();
 
 /**
  * LegPieceC
@@ -32,11 +23,7 @@ module legPieceC(
     fixation2_x_offset = 22;
 
     difference() {        
-        hull() {
-            cylinder(h = thickness, r = width, center = false, $fn = _fn);
-            translate([0, length, 0])
-                cylinder(h = thickness, r = width, center = false, $fn = _fn);
-        }
+        bone(length, width, thickness, _fn);
 
         translate([0, 0, 0])
             cylinder(h = thickness * 5, r = hole_diameter / 2, center = true, $fn = _fn);
@@ -60,3 +47,13 @@ module legPieceC(
 
     }
 }
+
+// Printable positionning
+translate([10, 0, 3])
+    rotate([0, 180, 0])
+    legPieceC();
+
+translate([-10, 0, 3])
+    rotate([0, 180, 0])
+        mirror([1, 0, 0])
+            legPieceC();

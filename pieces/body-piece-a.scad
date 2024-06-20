@@ -1,3 +1,4 @@
+use <./subpieces/bone.scad>
 
 bodyPieceA();
 
@@ -36,6 +37,9 @@ module bodyPieceA(
                 translate([fixations_position_lenth, fixations_position_width, 0])
                     cylinder(h = thickness, r = branches_width / 2, center = false, $fn = _fn);
             }
+
+            // bone(length, width, thickness, _fn);
+
             translate([0, 0, 0])
                 cylinder(h = thickness * 5, r = screw_hole_diameter / 2, center = true, $fn = _fn);
 
