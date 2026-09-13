@@ -1,6 +1,5 @@
 use <./subpieces/bone.scad>
 
-bodyPieceA();
 
 /**
  * bodyPieceA
@@ -8,7 +7,6 @@ bodyPieceA();
  * @description Joins sections of body
  * @type piece
  * @parent bodyComponent
- * @stl
  */
 module bodyPieceA(
     with_platform = true
@@ -73,3 +71,12 @@ module bodyPieceA(
     }
 
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+bodyPieceA();

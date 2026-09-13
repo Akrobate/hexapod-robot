@@ -1,10 +1,6 @@
 use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
-// Positionning for printing
-translate([0, 0, 3])
-    rotate([0, 90, 0])
-        hipPieceC();
 
 /**
  * HipPieceC
@@ -12,7 +8,6 @@ translate([0, 0, 3])
  * @description Hip Piece C
  * @type piece
  * @parent HipComponent
- * @stl
  */
 module hipPieceC(
     x_offset_top_axis = -15,
@@ -21,11 +16,8 @@ module hipPieceC(
 
     main_piece_height = 36;
     articluation_axis_diameter_offest = 0.2;
-    
     display_optional_screw_holes = false;
-
     screw_hole_diameter = 3.5;
-    
     _fn = 64;
 
     difference() {
@@ -100,3 +92,13 @@ module hipPieceC(
     }
 
 }
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+translate([0, 0, 3])
+    rotate([0, 90, 0])
+        hipPieceC();

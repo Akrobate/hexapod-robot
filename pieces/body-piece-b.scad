@@ -1,7 +1,5 @@
 use <../envelopes/screw-envelope.scad>
 
-// Positionning for printing
-bodyPieceB();
 
 /**
  * bodyPieceB
@@ -9,7 +7,6 @@ bodyPieceB();
  * @description Piece to hold hipSupport
  * @type piece
  * @parent bodyComponent
- * @stl
  */
 module bodyPieceB(
     length = 8,
@@ -75,3 +72,11 @@ module bodyPieceB(
 
     }
 }
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+bodyPieceB();

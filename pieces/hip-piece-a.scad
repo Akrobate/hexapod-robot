@@ -2,7 +2,6 @@ use <../envelopes/servo-envelope.scad>
 use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
-hipPieceA();
 
 /**
  * HipPieceA
@@ -10,7 +9,6 @@ hipPieceA();
  * @description Hip Piece A
  * @type piece
  * @parent HipComponent
- * @stl 
  */
 module hipPieceA() {
 
@@ -69,3 +67,12 @@ module hipPieceA() {
         }
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+hipPieceA();

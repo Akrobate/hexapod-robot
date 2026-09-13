@@ -2,9 +2,6 @@ use <../envelopes/servo-envelope.scad>
 use <../envelopes/screw-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
-// Positionning for printing
-rotate([0, -90, 0])
-    hipPieceB();
 
 /**
  * HipPieceB
@@ -12,7 +9,6 @@ rotate([0, -90, 0])
  * @description Hip Piece B
  * @type piece
  * @parent HipComponent
- * @stl 
  */
 module hipPieceB(
     x_offset_top_axis = -15,
@@ -94,3 +90,13 @@ module hipPieceB(
         }
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+rotate([0, -90, 0])
+    hipPieceB();

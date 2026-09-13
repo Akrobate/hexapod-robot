@@ -1,15 +1,10 @@
-
-bodyPieceC();
-
 /**
  * bodyPieceC
  * @name bodyPieceC
  * @description Piece to join left and right legs
  * @type piece
  * @parent bodyComponent
- * @stl 
  */
-
 module bodyPieceC(
     length = 60,
     width = 18
@@ -64,3 +59,12 @@ module bodyPieceC(
 
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+bodyPieceC();
