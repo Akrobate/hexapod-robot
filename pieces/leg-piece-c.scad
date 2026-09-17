@@ -48,7 +48,13 @@ module legPieceC(
     }
 }
 
-// Printable positionning
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
 translate([10, 0, 3])
     rotate([0, 180, 0])
     legPieceC();

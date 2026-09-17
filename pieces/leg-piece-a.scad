@@ -1,7 +1,6 @@
 use <../envelopes/servo-arm-envelope.scad>
 use <../assets/fonts/Freshman.ttf>
 
-legPieceA();
 
 /**
  * LegPieceA
@@ -36,3 +35,12 @@ module legPieceA(
             cylinder(h = thickness * 5, r = hole_diameter / 2, center = true, $fn = _fn);
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+legPieceA();

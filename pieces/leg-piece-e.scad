@@ -1,7 +1,6 @@
 use <../envelopes/servo-envelope.scad>
 use <./subpieces/articulation-axis.scad>
 
-legPieceE();
 
 /**
  * LegPieceE
@@ -59,3 +58,12 @@ module legPieceE(
 
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+legPieceE();

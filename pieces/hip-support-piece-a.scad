@@ -39,3 +39,11 @@ module hipSupportPieceA(
             cylinder(h = thickness * 5, r = screw_hole_diameter / 2, center = true, $fn = 64);
     }
 }
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+hipSupportPieceA();

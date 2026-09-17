@@ -1,9 +1,5 @@
 use <../envelopes/screw-envelope.scad>
 
-// Positionning for printing
-translate([0, -25, 4])
-    rotate([-90, 0, 0])
-        hipSupportPieceC();
 
 /**
  * hipSupportPieceC
@@ -77,3 +73,14 @@ module hipSupportPieceC(
 
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+translate([0, -25, 4])
+    rotate([-90, 0, 0])
+        hipSupportPieceC();

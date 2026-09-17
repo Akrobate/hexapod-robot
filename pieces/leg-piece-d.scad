@@ -1,6 +1,5 @@
 use <../envelopes/screw-envelope.scad>
 
-legPieceD();
 
 /**
  * LegPieceD
@@ -47,3 +46,12 @@ module legPieceD(
                 screwEnvelope();
     }
 }
+
+
+/**
+ * @stl
+ * @png
+ * @colorscheme BeforeDawn
+ * @view axes,scales
+ */
+legPieceD();
