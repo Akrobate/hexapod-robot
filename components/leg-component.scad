@@ -1,8 +1,8 @@
-use <../pieces/leg-piece-a.scad>
-use <../pieces/leg-piece-b.scad>
-use <../pieces/leg-piece-c.scad>
-use <../pieces/leg-piece-d.scad>
-use <../pieces/leg-piece-e.scad>
+use <../pieces/legPieceA.scad>
+use <../pieces/legPieceB.scad>
+use <../pieces/legPieceC.scad>
+use <../pieces/legPieceD.scad>
+use <../pieces/legPieceE.scad>
 
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>

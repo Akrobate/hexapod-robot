@@ -6,18 +6,18 @@ body-piece-a-1
 body-piece-a
 body-piece-b
 body-piece-c
-hip-piece-a
-hip-piece-b
-hip-piece-c
-hip-piece-d
+hipPieceA
+hipPieceB
+hipPieceC
+hipPieceD
 hip-support-piece-a
 hip-support-piece-b
 hip-support-piece-c
-leg-piece-a
-leg-piece-b
-leg-piece-c
-leg-piece-d
-leg-piece-e
+legPieceA
+legPieceB
+legPieceC
+legPieceD
+legPieceE
 )
 
 declare -g COMPONENTS=(

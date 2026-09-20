@@ -1,7 +1,7 @@
-use <../pieces/hip-piece-a.scad>
-use <../pieces/hip-piece-b.scad>
-use <../pieces/hip-piece-c.scad>
-use <../pieces/hip-piece-d.scad>
+use <../pieces/hipPieceA.scad>
+use <../pieces/hipPieceB.scad>
+use <../pieces/hipPieceC.scad>
+use <../pieces/hipPieceD.scad>
 use <./servo-motor.scad>
 use <../assets/screw/screw.scad>
 
