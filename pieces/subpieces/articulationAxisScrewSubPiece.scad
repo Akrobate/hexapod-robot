@@ -1,7 +1,6 @@
-use <./articulation-axis.scad>
+use <./articulationAxisSubPiece.scad>
 use <../../envelopes/screw-envelope.scad>
 
-articulationAxisScrewSubPiece();
 
 /**
  * articulationAxisScrewSubPiece
@@ -31,3 +30,6 @@ module articulationAxisScrewSubPiece(
                 screwEnvelope();
     }
 }
+
+
+articulationAxisScrewSubPiece();

@@ -17,23 +17,23 @@
 ## hipPieceB
 <img src="png_files/pieces/hipPieceB.png" alt="Image">
 
-## body-piece-a-1
-<img src="png_files/pieces/body-piece-a-1.png" alt="Image">
+## bodyPieceA1
+<img src="png_files/pieces/bodyPieceA1.png" alt="Image">
 
 ## legPieceC
 <img src="png_files/pieces/legPieceC.png" alt="Image">
 
-## hip-support-piece-c
-<img src="png_files/pieces/hip-support-piece-c.png" alt="Image">
+## hipSupportPieceC
+<img src="png_files/pieces/hipSupportPieceC.png" alt="Image">
 
-## body-piece-c
-<img src="png_files/pieces/body-piece-c.png" alt="Image">
+## bodyPieceC
+<img src="png_files/pieces/bodyPieceC.png" alt="Image">
 
-## body-piece-b
-<img src="png_files/pieces/body-piece-b.png" alt="Image">
+## bodyPieceB
+<img src="png_files/pieces/bodyPieceB.png" alt="Image">
 
-## hip-support-piece-a
-<img src="png_files/pieces/hip-support-piece-a.png" alt="Image">
+## hipSupportPieceA
+<img src="png_files/pieces/hipSupportPieceA.png" alt="Image">
 
 ## legPieceD
 <img src="png_files/pieces/legPieceD.png" alt="Image">
@@ -44,6 +44,6 @@
 ## hipPieceC
 <img src="png_files/pieces/hipPieceC.png" alt="Image">
 
-## hip-support-piece-b
-<img src="png_files/pieces/hip-support-piece-b.png" alt="Image">
+## hipSupportPieceB
+<img src="png_files/pieces/hipSupportPieceB.png" alt="Image">
 

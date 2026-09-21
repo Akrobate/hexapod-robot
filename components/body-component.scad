@@ -1,7 +1,7 @@
 use <../pieces/body-piece-a.scad>
-use <../pieces/body-piece-a-1.scad>
-use <../pieces/body-piece-b.scad>
-use <../pieces/body-piece-c.scad>
+use <../pieces/bodyPieceA1.scad>
+use <../pieces/bodyPieceB.scad>
+use <../pieces/bodyPieceC.scad>
 
 bodyComponent();
 

@@ -1,12 +1,9 @@
-articulationAxisSubPiece();
-
 /**
  * articulationAxisSubPiece
  * @name articulationAxisSubPiece
  * @description articlulation axis
  * @type subPiece
  */
-
 module articulationAxisSubPiece(
     base_diameter,
     base_height,
@@ -33,3 +30,5 @@ module articulationAxisSubPiece(
         );
 
 }
+
+articulationAxisSubPiece();

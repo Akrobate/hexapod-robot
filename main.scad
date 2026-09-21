@@ -10,7 +10,7 @@ leg_angle = 45 + ($t < 0.5 ? $t * 180 : 180 - $t * 180);
 // max: 120
 leg_angle = 90;
 angle_knee = 0;
-angle_hip = -20;
+angle_hip = 0; // -20
 
 
 hexapodRobotComponent(

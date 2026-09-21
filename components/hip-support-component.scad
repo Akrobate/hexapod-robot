@@ -1,6 +1,6 @@
-use <../pieces/hip-support-piece-a.scad>
-use <../pieces/hip-support-piece-b.scad>
-use <../pieces/hip-support-piece-c.scad>
+use <../pieces/hipSupportPieceA.scad>
+use <../pieces/hipSupportPieceB.scad>
+use <../pieces/hipSupportPieceC.scad>
 use <../assets/screw/screw.scad>
 
 hipSupportComponent();

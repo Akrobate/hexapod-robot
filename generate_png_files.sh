@@ -2,17 +2,17 @@
 
 
 declare -g PIECES=(
-body-piece-a-1
+bodyPieceA1
 body-piece-a
-body-piece-b
-body-piece-c
+bodyPieceB
+bodyPieceC
 hipPieceA
 hipPieceB
 hipPieceC
 hipPieceD
-hip-support-piece-a
-hip-support-piece-b
-hip-support-piece-c
+hipSupportPieceA
+hipSupportPieceB
+hipSupportPieceC
 legPieceA
 legPieceB
 legPieceC
