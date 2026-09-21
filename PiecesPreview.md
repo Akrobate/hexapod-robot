@@ -2,8 +2,8 @@
 ## legPieceB
 <img src="png_files/pieces/legPieceB.png" alt="Image">
 
-## body-piece-a
-<img src="png_files/pieces/body-piece-a.png" alt="Image">
+## bodyPieceA
+<img src="png_files/pieces/bodyPieceA.png" alt="Image">
 
 ## hipPieceD
 <img src="png_files/pieces/hipPieceD.png" alt="Image">

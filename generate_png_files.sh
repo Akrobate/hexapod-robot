@@ -3,7 +3,7 @@
 
 declare -g PIECES=(
 bodyPieceA1
-body-piece-a
+bodyPieceA
 bodyPieceB
 bodyPieceC
 hipPieceA

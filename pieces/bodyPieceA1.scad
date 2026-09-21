@@ -1,4 +1,4 @@
-use <./body-piece-a.scad>
+use <./bodyPieceA.scad>
 
 /**
  * bodyPieceA1
