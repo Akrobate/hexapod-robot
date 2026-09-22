@@ -1,4 +1,4 @@
-use <components/hexapod-robot-component.scad>
+use <components/hexapodRobotComponent.scad>
 
 // leg tests
 angle = $t < 0.5 ? $t * 360 : 360 - $t * 360;

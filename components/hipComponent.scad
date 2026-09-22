@@ -2,10 +2,9 @@ use <../pieces/hipPieceA.scad>
 use <../pieces/hipPieceB.scad>
 use <../pieces/hipPieceC.scad>
 use <../pieces/hipPieceD.scad>
-use <./servo-motor.scad>
+use <./servoMotor.scad>
 use <../assets/screw/screw.scad>
 
-hipComponent();
 
 /**
  * hipComponent
@@ -106,3 +105,10 @@ module hipComponent(param_s1) {
 
     }
 }
+
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+hipComponent();

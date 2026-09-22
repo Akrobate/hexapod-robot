@@ -1,8 +1,7 @@
 // Draft file
-use <hip-leg-component.scad>
-use <body-component.scad>
+use <hipLegComponent.scad>
+use <bodyComponent.scad>
 
-hexapodRobotComponent();
 
 /**
  * hexapodRobotComponent
@@ -63,3 +62,10 @@ module hexapodRobotComponent(
             mirror([0, 1, 0])
                 hipLegComponent(right_leg_3_knee, right_leg_3_hip);
 }
+
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+hexapodRobotComponent();

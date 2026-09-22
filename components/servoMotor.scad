@@ -1,5 +1,3 @@
-servoMotor();
-
 /**
  * servoMotor
  * @name servoMotor
@@ -8,12 +6,11 @@ servoMotor();
  */
 module servoMotor(angle = 0) {
 
-    // Servo model sizes:
-    // 11.8
-    // 22.2
+    x_size = 11.8;
+    y_size = 22.2;
 
     // translating to center the servo motor
-    translate([-11.8 / 2, - 22.2 + (11.8 / 2), 0]) {
+    translate([-x_size / 2, - y_size + (x_size / 2), 0]) {
         color("DodgerBlue")
             import("../assets/sg90/SG90_v7.stl");
 
@@ -24,3 +21,10 @@ module servoMotor(angle = 0) {
                         import("../assets/sg90/SG90_arm_v2.stl");
     }
 }
+
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+servoMotor();

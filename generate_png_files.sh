@@ -21,13 +21,13 @@ legPieceE
 )
 
 declare -g COMPONENTS=(
-body-component
-hexapod-robot-component
-hip-component
-hip-leg-component
-hip-support-component
-leg-component
-servo-motor
+bodyComponent
+hexapodRobotComponent
+hipComponent
+hipLegComponent
+hipSupportComponent
+legComponent
+servoMotor
 )
 
 # Pieces png generation

@@ -1,12 +1,8 @@
-use <leg-component.scad>
-use <hip-component.scad>
-use <hip-support-component.scad>
+use <legComponent.scad>
+use <hipComponent.scad>
+use <hipSupportComponent.scad>
 use <../assets/screw/screw.scad>
 
-hipLegComponent(
-    angle_knee = 0,
-    angle_hip = 0
-);
 
 /**
  * hipLegComponent
@@ -45,3 +41,13 @@ module hipLegComponent(
     };
 
 }
+
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+hipLegComponent(
+    angle_knee = 0,
+    angle_hip = 0
+);

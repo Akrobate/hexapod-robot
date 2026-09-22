@@ -4,12 +4,9 @@ use <../pieces/legPieceC.scad>
 use <../pieces/legPieceD.scad>
 use <../pieces/legPieceE.scad>
 
-use <./servo-motor.scad>
+use <./servoMotor.scad>
 use <../assets/screw/screw.scad>
 
-translate([0, 0, 50])
-    rotate([0, -90, 0])
-        legComponent();
 
 /**
  * legComponent
@@ -81,3 +78,11 @@ module legComponent(servo_angle = 0) {
 
 }
 
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+translate([0, 0, 50])
+    rotate([0, -90, 0])
+        legComponent();

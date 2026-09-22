@@ -3,8 +3,6 @@ use <../pieces/bodyPieceA1.scad>
 use <../pieces/bodyPieceB.scad>
 use <../pieces/bodyPieceC.scad>
 
-bodyComponent();
-
 /**
  * bodyComponent
  * @name bodyComponent
@@ -74,3 +72,10 @@ module bodyComponent() {
     translate([-9 + bot_length, 0, -3])
         bodyPieceC();
 }
+
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+bodyComponent();
