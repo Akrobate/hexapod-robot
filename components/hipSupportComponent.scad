@@ -3,7 +3,6 @@ use <../pieces/hipSupportPieceB.scad>
 use <../pieces/hipSupportPieceC.scad>
 use <../assets/screw/screw.scad>
 
-hipSupportComponent();
 
 /**
  * hipSupportComponent
@@ -43,3 +42,10 @@ module hipSupportComponent(param_s1) {
             screw();
 
 }
+
+
+/**
+ * @png
+ * @colorscheme BeforeDawn
+ */
+hipSupportComponent();

@@ -1,4 +1,4 @@
-use <../envelopes/servo-arm-envelope.scad>
+use <../envelopes/servoArmEnvelope.scad>
 use <../assets/fonts/Freshman.ttf>
 
 

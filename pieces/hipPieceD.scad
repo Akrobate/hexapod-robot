@@ -1,7 +1,7 @@
-use <../envelopes/servo-envelope.scad>
+use <../envelopes/servoEnvelope.scad>
 use <./subpieces/articulationAxisSubPiece.scad>
 use <../assets/screw/screw.scad>
-use <../envelopes/screw-envelope.scad>
+use <../envelopes/screwEnvelope.scad>
 
 
 /**

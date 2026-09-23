@@ -1,6 +1,5 @@
 // https://www.amazon.fr/TOOGOO-Quadrex-courte-Boitier-dordinateur/dp/B00KBPORXU/ref=sr_1_33?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=visserie+ordinateur&qid=1583356374&sr=8-33
 
-screw();
 
 module screw(center_screwed_position = false) {
 
@@ -30,3 +29,5 @@ module screw(center_screwed_position = false) {
                 }
             }
 }
+
+screw();

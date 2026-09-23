@@ -1,5 +1,5 @@
 use <./articulationAxisSubPiece.scad>
-use <../../envelopes/screw-envelope.scad>
+use <../../envelopes/screwEnvelope.scad>
 
 
 /**

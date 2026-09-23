@@ -1,4 +1,4 @@
-use <../envelopes/servo-envelope.scad>
+use <../envelopes/servoEnvelope.scad>
 use <./subpieces/articulationAxisSubPiece.scad>
 
 
